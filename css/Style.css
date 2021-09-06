@@ -1,0 +1,1028 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+/* Listas */
+/* Variables */
+#sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo {
+  background-color: #e5e5e5;
+  padding: 5rem;
+  margin: 5rem;
+  margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Servicios-index .servicios-articulos {
+  display: grid;
+  margin: 20rem 20rem 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 100rem);
+  grid-template-areas: "modelado modelado modelado" "renderizado renderizado renderizado" "produccion produccion produccion" "realidad realidad realidad";
+}
+
+#Servicios-index .titular {
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
+  height: 20rem;
+}
+
+.body .titular {
+  background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
+}
+
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-uno .carousel {
+  border: 0.2rem solid #212529;
+  border-radius: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.body {
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  line-height: 5rem;
+}
+.body a {
+  font-size: 2rem;
+  color: var(--main-color);
+  text-decoration: none;
+}
+.body a:hover {
+  color: #6c757d;
+}
+.body h1,
+.body h2,
+.body h3 {
+  font-family: "Lato", sans-serif;
+}
+.body h2 {
+  font-size: 4rem;
+}
+.body h3 {
+  font-size: 3.5rem;
+}
+.body h4 {
+  font-size: 1.8rem;
+}
+.body p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
+  color: #e5e5e5;
+}
+.body .hr {
+  background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
+  height: 40rem;
+}
+.body .hr .presentacion {
+  position: relative;
+  top: 10rem;
+  margin-bottom: 30rem;
+}
+.body .hr .presentacion .h1 {
+  font-size: 10rem;
+  color: #212529;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+}
+.body .hr .presentacion .h1:first-child {
+  text-shadow: 0 0 10rem #e5e5e5;
+  color: #919eaa;
+}
+.body .hr .presentacion .h1:last-child {
+  position: absolute;
+  top: 5rem;
+  left: 70rem;
+}
+.body .titular .titulo {
+  text-shadow: 0 0 10rem #e5e5e5;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 10rem;
+  margin: 0 0 2rem 10rem;
+  color: black;
+}
+.body .titular p {
+  margin-bottom: 5rem;
+}
+
+/* Header */
+#Inicio {
+  background-color: #212529;
+  /* Video dynamis de portada */
+}
+#Inicio video {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#Inicio .navbar {
+  box-shadow: 0 0 10rem 2rem;
+}
+#Inicio .navbar .navbar-brand img {
+  width: 20rem;
+}
+#Inicio .navbar .navbar-brand:hover {
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+#Inicio .navbar .nav-item:hover {
+  box-shadow: 0 -20px 10px -10px #212529 inset;
+}
+
+/* Fin Header */
+.main .section-uno {
+  display: flex;
+  justify-content: center;
+  margin: 10rem;
+}
+.main .section-uno .carousel {
+  margin: 0 20rem;
+  background-color: #212529;
+  width: 75%;
+}
+.main .mobile {
+  display: none;
+}
+
+#Servicios-index {
+  background-color: #212529;
+}
+#Servicios-index .servicios-articulos .articulo {
+  box-shadow: 0 0 5rem #e5e5e5;
+}
+#Servicios-index .servicios-articulos .articulo h2 {
+  margin: 5rem;
+}
+#Servicios-index .servicios-articulos .articulo h2, #Servicios-index .servicios-articulos .articulo p {
+  color: #212529;
+  background-color: #e5e5e5;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem #212529;
+}
+#Servicios-index .servicios-articulos .articulo:nth-child(1) {
+  grid-area: modelado;
+  background-image: url("https://i.ibb.co/wpZhsLs/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Servicios-index .servicios-articulos .articulo:nth-child(2) {
+  grid-area: renderizado;
+  background-image: url("https://i.ibb.co/6mcZWpT/Final-Casa-Caro-Fer-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#Servicios-index .servicios-articulos .articulo:nth-child(3) {
+  grid-area: produccion;
+  background-image: url("https://i.ibb.co/WP9cCDT/youtube-3216705-1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Servicios-index .servicios-articulos .articulo:nth-child(4) {
+  grid-area: realidad;
+  background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Servicios-index .servicios-articulos .articulo:nth-child(4) h2, #Servicios-index .servicios-articulos .articulo:nth-child(4) p {
+  box-shadow: 0 0 5rem #e5e5e5;
+}
+#Servicios-index .ver-mas {
+  background-color: #212529;
+  /* Ancla del index.html */
+}
+#Servicios-index .ver-mas a {
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  color: #e5e5e5;
+}
+#Servicios-index .ver-mas a:hover {
+  color: #6c757d;
+}
+
+#Servicios .contenedor .contenido {
+  margin: 10rem;
+}
+#Servicios .contenedor .contenido .articulo {
+  box-shadow: 0 0 5rem #212529;
+}
+#Servicios .contenedor .contenido .articulo h2 {
+  margin: 5rem;
+}
+#Servicios .contenedor .contenido .articulo h2, #Servicios .contenedor .contenido .articulo p {
+  color: #212529;
+  background-color: #e5e5e5;
+  padding: 0.5rem;
+}
+
+#sobre-nosotros {
+  margin: 0;
+  /* founder */
+}
+#sobre-nosotros .nosotros h2 {
+  margin: 5rem;
+}
+#sobre-nosotros .nosotros h2, #sobre-nosotros .nosotros p {
+  color: #212529;
+  padding: 0.5rem;
+}
+#sobre-nosotros .nosotros .articulo {
+  box-shadow: 0 0 5rem #212529;
+}
+#sobre-nosotros .gradient {
+  background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
+  height: 10rem;
+}
+#sobre-nosotros #founder {
+  background-color: #212529;
+  background-size: contain;
+  padding: 5rem;
+}
+#sobre-nosotros #founder .articulo {
+  background-color: #e5e5e5;
+  padding: 5rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 5rem #e5e5e5;
+}
+#sobre-nosotros #founder .articulo h2 {
+  color: #212529;
+  margin: 5rem, 5rem, 2.5rem;
+}
+#sobre-nosotros #founder .articulo h3 {
+  margin-bottom: 5rem;
+  color: #212529;
+  font-size: 3.4rem;
+}
+#sobre-nosotros #founder .articulo p {
+  color: #212529;
+  text-align: left;
+}
+
+/* Portfolio */
+#portfolio .titular-dos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 11rem;
+  background-color: #e5e5e5;
+}
+#portfolio .titular-dos h2 {
+  color: #343a40;
+  font-family: "Oswald", sans-serif;
+  margin: 0 10rem 2rem 0;
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
+  /* GRID CON SCALE*/
+  margin: 10rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 30rem;
+  gap: 3rem 3rem;
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes div {
+  transition: all 0.5s ease;
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes div:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image:nth-child(3) {
+  grid-row: span 3;
+}
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image:nth-child(7) {
+  grid-row: span 2;
+}
+#portfolio #portfolio-galeria-videos .videos {
+  display: flex;
+  justify-content: center;
+}
+#portfolio #portfolio-galeria-videos .videos iframe {
+  margin: 2rem;
+}
+
+#Contacto .titular-dos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 11rem;
+  background-color: #e5e5e5;
+}
+#Contacto .titular-dos h2 {
+  color: #343a40;
+  font-family: "Oswald", sans-serif;
+  margin: 0 10rem 2rem 0;
+}
+#Contacto #info-contacto-general .info-contacto {
+  margin: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5rem;
+  grid-template-areas: "ubicacion ubicacion horario horario" "ubicacion ubicacion horario horario" "telefono telefono mail mail" "telefono telefono mail mail";
+}
+#Contacto #info-contacto-general .info-contacto .info {
+  border: 0.2rem solid var(--main-color);
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem;
+  background-color: #e5e5e5;
+  padding: 5rem;
+  transition: all 1s ease;
+}
+#Contacto #info-contacto-general .info-contacto .info h3, #Contacto #info-contacto-general .info-contacto .info p {
+  color: #212529;
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(1) {
+  grid-area: ubicacion;
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(1):hover {
+  transform: scale(1.2);
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(2) {
+  grid-area: horario;
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(2):hover {
+  transform: scale(1.2);
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(3) {
+  grid-area: telefono;
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(3):hover {
+  transform: scale(1.2);
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(4) {
+  grid-area: mail;
+}
+#Contacto #info-contacto-general .info-contacto .info:nth-child(4):hover {
+  transform: scale(1.2);
+}
+#Contacto #info-contacto-general .info-contacto .info .icono img {
+  width: 10rem;
+}
+#Contacto #mapa {
+  margin: 10rem 0;
+}
+#Contacto #mensaje .articulo {
+  background-color: #e5e5e5;
+  margin: 5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border: 0.2rem solid #212529;
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem;
+}
+#Contacto #mensaje .articulo h2 {
+  margin: 5rem;
+}
+#Contacto #mensaje .articulo h2, #Contacto #mensaje .articulo p {
+  color: #212529;
+  background-color: #e5e5e5;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem #212529;
+}
+#Contacto #mensaje .articulo .send-mensaje {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 10rem);
+  margin: 10rem;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form input {
+  width: 80%;
+  height: 3rem;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(1) {
+  grid-column: 3/4;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(2) {
+  grid-column: 4/5;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(4) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(5) {
+  grid-column: 2/6;
+  grid-row: 3/4;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(5) input {
+  width: 50%;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(6) {
+  grid-column: 3/5;
+  grid-row: 4/5;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(6) textarea {
+  width: 100%;
+  height: 20rem;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(6) input {
+  width: 10rem;
+  height: 5rem;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(7) {
+  grid-column: 3/5;
+  grid-row: 5/6;
+}
+#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(7) input {
+  width: 40%;
+  height: 5rem;
+}
+
+/* Footer */
+#Footer {
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+  background-image: url("https://i.ibb.co/BV94qrV/Footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Footer h3, #Footer h4, #Footer a {
+  color: #212529;
+}
+#Footer a:hover {
+  color: #6c757d;
+}
+#Footer h3 {
+  font-size: 2rem;
+}
+#Footer .nuestras-redes,
+#Footer .firma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Footer .back-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10rem;
+}
+#Footer .nuestras-redes img {
+  width: 4.5rem;
+}
+
+/* Fin footer */
+@media only screen and (max-width: 676px) {
+  /*MOBILE*/
+  .body h2 {
+    font-size: 4rem;
+  }
+  .body h3 {
+    font-size: 1.8rem;
+  }
+  .body h4 {
+    font-size: 1.3rem;
+  }
+  .body p {
+    font-size: 1.7rem;
+  }
+  .body .titular {
+    animation: none;
+    background: #e5e5e5;
+  }
+  .body .titular h1 {
+    margin: 5rem;
+    font-size: 5rem;
+  }
+  .body .titular h2 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .body .hr {
+    display: none;
+  }
+  .body #Inicio .navbar {
+    position: relative;
+  }
+  .body .main .h1 {
+    font-size: 3rem;
+    margin: 5rem;
+  }
+  .body .main .h2 {
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    color: #212529;
+    font-weight: bolder;
+    font-family: "Oswald", sans-serif;
+  }
+  .body .main .section-uno {
+    margin: 5rem 1rem;
+    padding: 0;
+  }
+  .body #Servicios {
+    margin: 0;
+    padding: 0;
+  }
+  .body #Servicios h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+  }
+  .body #Servicios .contenido {
+    margin: 0px;
+  }
+  .body #Servicios .contenido .articulo {
+    border-radius: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 5rem;
+  }
+  .body #Servicios .servicios-articulos {
+    display: none;
+  }
+  .body #Servicios .ver-mas {
+    display: none;
+  }
+  .body .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .body .mobile .img {
+    width: 100%;
+  }
+  .body .mobile .articulo-mobile {
+    margin-bottom: var(--margin-dos);
+  }
+  .body .mobile .articulo-mobile h2, .body .mobile .articulo-mobile p {
+    color: #212529;
+  }
+  .body .mobile .articulo-mobile h2 {
+    font-size: 3rem;
+  }
+  .body .mobile .articulo-mobile p {
+    font-size: 2rem;
+  }
+  .body .mobile .ver-mas-mobile {
+    background-color: #e5e5e5;
+  }
+  .body #portfolio #portfolio-galeria-imagenes .titular {
+    animation: none;
+  }
+  .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes div {
+    transform: none;
+  }
+  .body #portfolio #portfolio-galeria-videos .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body #portfolio #portfolio-galeria-videos .videos iframe {
+    margin: 1rem;
+    width: 100%;
+  }
+  .body #sobre-nosotros .articulo {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    margin: 0px;
+  }
+  .body #sobre-nosotros #founder {
+    padding: 1rem;
+  }
+  .body #sobre-nosotros #founder .articulo {
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    padding: 1rem;
+    margin: 0px;
+  }
+  .body #Contacto #info-contacto-general .info-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .body #Contacto #info-contacto-general .info-contacto .info:nth-child(1):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #info-contacto-general .info-contacto .info:nth-child(2):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #info-contacto-general .info-contacto .info:nth-child(3):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #info-contacto-general .info-contacto .info:nth-child(4):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #mensaje .articulo {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    margin: 0px;
+  }
+  .body #Contacto #mensaje .articulo .send-mensaje {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .body #Contacto #mensaje .articulo .send-mensaje .grid-form input {
+    width: 80%;
+  }
+  .body #Contacto #mensaje .articulo .send-mensaje .grid-form textarea {
+    width: 100%;
+  }
+  .body #Footer {
+    /* FOOTER */
+    flex-direction: column;
+    height: 40rem;
+  }
+  .body #Footer .back-home {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 677px) and (max-width: 1024px) {
+  /*TABLET*/
+  .body h2 {
+    font-size: 3rem;
+  }
+  .body h3 {
+    font-size: 1.75rem;
+  }
+  .body h4 {
+    font-size: 0.9rem;
+  }
+  .body .hr {
+    display: none;
+  }
+  .body #Servicios {
+    margin: 0;
+    padding: 0;
+  }
+  .body #Servicios .servicios-articulos {
+    margin: 5rem;
+  }
+  .body #Servicios .servicios-articulos .articulo {
+    margin-bottom: 10rem;
+  }
+  .body #Servicios .servicios-articulos .articulo h2, .body #Servicios .servicios-articulos .articulo p {
+    background-color: #e5e5e5;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem var(--main-color-dos);
+  }
+  .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
+    margin: 10rem 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 30rem;
+  }
+  .body #portfolio #portfolio-galeria-videos .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body #portfolio #portfolio-galeria-videos .videos iframe {
+    width: 100%;
+  }
+  .body #sobre-nosotros .titular h1 {
+    font-size: 5rem;
+  }
+  .body #Contacto #info-contacto-general .info-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .body #Contacto #info-contacto-general .info:nth-child(1):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #info-contacto-general .info:nth-child(2):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #info-contacto-general .info:nth-child(3):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #info-contacto-general .info:nth-child(4):hover {
+    transform: scale(1.2);
+  }
+  .body #Contacto #mensaje .send-mensaje {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .body #Contacto #mensaje .send-mensaje .grid-form input {
+    width: 50%;
+  }
+  .body #Contacto #mensaje .send-mensaje .grid-form textarea {
+    width: 100%;
+  }
+  .body #Footer {
+    height: 35rem;
+    flex-direction: column;
+  }
+  .body #Footer .back-home {
+    margin-left: 0;
+  }
+}
+/* ----------------------------------------------
+* Generated by Animista on 2021-8-10 10:57:20
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation bounce-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2021-8-10 11:23:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/* ----------------------------------------------
+* Generated by Animista on 2021-8-10 11:41:20
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+/* ----------------------------------------------
+* Generated by Animista on 2021-8-11 22:51:26
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation shadow-drop-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/*# sourceMappingURL=Style.css.map */

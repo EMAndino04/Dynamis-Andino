@@ -1,0 +1,36 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+@import "base/listas";
+@import "base/variables";
+@import "base/extends";
+@import "base/mixins";
+@import "base/maps";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+@import "components/body";
+@import "components/header";
+@import "components/index-main";
+@import "components/servicios-index";
+@import "components/servicios";
+@import "components/sobre-nosotros";
+@import "components/portfolio";
+@import "components/contacto";
+@import "components/footer";
+@import "components/mobile";
+@import "components/tablet";
+@import "components/animaciones";
+
+

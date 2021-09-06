@@ -1,0 +1,47 @@
+/* Footer */
+#Footer {
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+    background-image: url("https://i.ibb.co/BV94qrV/Footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h3, h4, a{
+        color: nth($colores, 4 );
+    }
+
+    a {
+        &:hover {
+            color: nth($colores, 3 );
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+ 
+    .nuestras-redes, 
+    .firma  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .back-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 10rem;
+    }
+
+    
+    .nuestras-redes{
+        img {
+            width: 4.5rem;
+            }
+    } 
+
+}
+
+/* Fin footer */

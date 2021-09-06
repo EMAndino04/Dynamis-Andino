@@ -1,0 +1,253 @@
+@media only screen and (max-width: 676px) {
+    /*MOBILE*/
+    .body{
+        h2{
+            font-size: 4rem;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+        }
+        
+        h4 {
+            font-size: 1.3rem;
+        }
+        
+        p{
+            font-size: 1.7rem;
+        }
+
+        .titular {
+            animation: none;
+            background: nth($colores, 1 );
+            h1 {
+                margin: 5rem;
+                font-size: 5rem;
+            }
+            h2{
+                margin-left: 0px;
+                text-align: center;
+                font-size: 5rem;
+            }
+        }
+
+        .hr{
+            display: none;
+        }
+        
+        #Inicio {
+            .navbar{
+                position: relative;
+            }
+        }
+        
+        .main{
+            .h1{
+                font-size: 3rem;
+                margin: $margin-dos;
+            }
+            .h2{
+                font-size: 5rem;
+                margin-top: $margin-dos;
+                margin-bottom: $margin;
+                color: nth($colores, 4 );
+                font-weight: bolder;
+                font-family: "Oswald", sans-serif;
+            }
+            .section-uno {
+                margin: 5rem 1rem ;
+                padding: 0;
+            }
+        }
+        
+
+
+         #Servicios {
+             margin: 0;
+             padding: 0;
+
+            h1{
+                font-size: 5rem;
+                margin-top: $margin-dos;
+            }
+            
+            .contenido {
+                margin: 0px;
+               
+                .articulo{
+                    border-radius: none;
+                    padding: 1rem;
+                    margin: 0.5rem;
+                    margin-bottom: $margin-dos;
+                }
+            }
+
+            .servicios-articulos {
+                display: none;
+               }
+            
+            .ver-mas {
+                display: none;
+            }
+         }
+              
+    
+        .mobile {
+            display: flex;
+            flex-direction: column;
+
+            .img {
+                width: 100%;
+            }
+        
+            .articulo-mobile {
+
+                margin-bottom: var(--margin-dos);
+
+                h2, p {
+                    color: nth($colores, 4 );
+                }
+
+                h2{
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-size: 2rem;
+                }
+            }
+
+            .ver-mas-mobile{
+                background-color: nth($colores, 1 );
+                
+            }
+    
+        }
+    
+        
+        
+        
+
+        #portfolio {
+            #portfolio-galeria-imagenes {
+                .titular{
+                    animation: none;
+                }
+                .portfolio-galeria{
+                    .imagenes{
+                        margin: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center; 
+                        div{
+                            transform: none;
+                        }
+                    }
+                }
+            }
+            #portfolio-galeria-videos{
+                    .videos  {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        iframe{
+                            margin: 1rem;
+                            width: 100%;
+                        }
+                    }    
+                }  
+        }
+
+        
+        #sobre-nosotros {
+
+            .articulo{
+                border: none;
+                border-radius: none;
+                box-shadow: none;
+                margin: 0px;
+            }
+
+            #founder{
+                padding: 1rem;
+                .articulo{
+                    background-color: nth($colores , 1 );
+                    border: none;
+                    border-radius: none;
+                    box-shadow: none;
+                    padding: 1rem;
+                    margin: 0px;
+                }
+            }
+        }
+    
+        
+        #Contacto{
+            #info-contacto-general {
+                .info-contacto {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 1rem;
+    
+                    .info{
+                        &:nth-child(1):hover{
+                            transform: scale(1.2);
+                        }
+                        
+                        
+                        &:nth-child(2):hover{
+                            transform: scale(1.2);
+                        }
+                        
+                        
+                        &:nth-child(3):hover {
+                            transform: scale(1.2);
+                        }
+                        
+                        
+                        &:nth-child(4):hover{
+                            transform: scale(1.2);
+                        }
+                    }
+    
+                }
+        }     
+        #mensaje{   
+            .articulo{ 
+                border: none;
+                border-radius: none;
+                box-shadow: none;
+                margin: 0px;
+                .send-mensaje {
+                    display:flex;
+                    flex-direction: column;        
+                    margin: 2rem;
+                    
+                    .grid-form{
+                        input {
+                           width: 80%;
+                       }
+                       textarea {
+                           width: 100%;
+                       }
+                    }
+    
+                }    
+            }
+    }
+
+    } 
+        #Footer {
+            /* FOOTER */
+            flex-direction: column;
+            height: 40rem;
+
+            .back-home {
+                margin-left: 0;
+            }
+        }
+    
+
+    }
+}

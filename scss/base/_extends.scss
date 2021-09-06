@@ -1,0 +1,47 @@
+%articulo {
+    background-color: nth($colores, 1 );
+    padding: $margin-dos;
+    margin: $margin-dos;
+    margin-bottom: $margin*2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%grid-articulo {
+    display: grid;
+                margin: 20rem 20rem $margin-dos;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 100rem);
+                grid-template-areas: "modelado modelado modelado"
+                                     "renderizado renderizado renderizado"
+                                     "produccion produccion produccion"
+                                     "realidad realidad realidad";
+}
+
+%titular {
+    display: flex;
+        align-items: flex-end;
+        background: linear-gradient(360deg, nth($colores, 4), nth($colores, 5) , nth($colores, 2), nth($colores, 1));
+        height: 20rem; 
+}
+
+%titular-reverse {
+        background: linear-gradient(180deg, nth($colores, 4), nth($colores, 5) , nth($colores, 2), nth($colores, 1));
+}
+
+%border-r {
+    border: 0.2rem solid nth($colores, 4 );
+    border-radius: 5rem;
+}
+
+%shadow-black{
+    box-shadow: 0 0 5rem nth($colores, 4 );
+}
+
+%shadow-white{
+    box-shadow: 0 0 5rem nth($colores, 1 );
+}
+
+

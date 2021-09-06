@@ -1,0 +1,80 @@
+#Servicios-index {
+    background-color: nth($colores, 4 );
+    .titular{
+        @extend %titular;
+    }
+        .servicios-articulos {
+            @extend %grid-articulo;
+    
+            
+            .articulo {
+                @extend %articulo;
+                @extend %border-r;
+                @include shadow(nth($colores, 1));
+    
+                h2 {
+                    margin: $margin-dos;
+                }
+                
+                h2, p {
+                    color: nth($colores, 4 );
+                    background-color: nth($colores, 1 );
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    border-radius: 5rem;
+                    @include shadow(nth($colores, 4));
+                }
+    
+                &:nth-child(1) {
+                    grid-area: modelado;
+                    background-image: url("https://i.ibb.co/wpZhsLs/3.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                
+                &:nth-child(2) {
+                    grid-area: renderizado;
+                    background-image: url("https://i.ibb.co/6mcZWpT/Final-Casa-Caro-Fer-2.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                
+                }
+                
+                &:nth-child(3) {
+                    grid-area: produccion;
+                    background-image: url("https://i.ibb.co/WP9cCDT/youtube-3216705-1920.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                
+                &:nth-child(4) {
+                    grid-area: realidad;
+                    background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    h2, p {
+                        @include shadow(nth($colores, 1));
+                    }
+                }
+    
+    
+            }
+        }
+
+.ver-mas{
+    background-color: nth($colores, 4 ); /* Ancla del index.html */
+    
+    a{
+        font-family: 'Oswald', sans-serif;
+        font-size: 5rem;
+        color: nth($colores, 1 );
+
+        &:hover {
+            color: nth($colores, 3 );
+        }
+    }
+} 
+}
