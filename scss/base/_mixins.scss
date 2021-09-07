@@ -8,3 +8,7 @@
 @mixin shadow($color){
     box-shadow: 0 0 5rem $color;
 }
+
+@mixin text-shadow($color){
+    text-shadow: 0 0 2rem $color;
+}

@@ -162,18 +162,14 @@
   background-color: #212529;
 }
 #Servicios-index .servicios-articulos .articulo {
+  text-shadow: 0 0 2rem #212529;
   box-shadow: 0 0 5rem #e5e5e5;
 }
 #Servicios-index .servicios-articulos .articulo h2 {
-  margin: 5rem;
-}
-#Servicios-index .servicios-articulos .articulo h2, #Servicios-index .servicios-articulos .articulo p {
-  color: #212529;
-  background-color: #e5e5e5;
-  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 10rem;
+  color: #e5e5e5;
   padding: 0.5rem;
-  border-radius: 5rem;
-  box-shadow: 0 0 5rem #212529;
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(1) {
   grid-area: modelado;
@@ -201,9 +197,7 @@
   background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-#Servicios-index .servicios-articulos .articulo:nth-child(4) h2, #Servicios-index .servicios-articulos .articulo:nth-child(4) p {
-  box-shadow: 0 0 5rem #e5e5e5;
+  text-shadow: 0 0 2rem #e5e5e5;
 }
 #Servicios-index .ver-mas {
   background-color: #212529;
@@ -369,25 +363,37 @@
   grid-area: ubicacion;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(1):hover {
-  transform: scale(1.2);
+  -webkit-transform: scale 1.2;
+  -o-transform: scale 1.2;
+  -moz-transform: scale 1.2;
+  transform: scale 1.2;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(2) {
   grid-area: horario;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(2):hover {
-  transform: scale(1.2);
+  -webkit-transform: scale 1.2;
+  -o-transform: scale 1.2;
+  -moz-transform: scale 1.2;
+  transform: scale 1.2;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(3) {
   grid-area: telefono;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(3):hover {
-  transform: scale(1.2);
+  -webkit-transform: scale 1.2;
+  -o-transform: scale 1.2;
+  -moz-transform: scale 1.2;
+  transform: scale 1.2;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(4) {
   grid-area: mail;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(4):hover {
-  transform: scale(1.2);
+  -webkit-transform: scale 1.2;
+  -o-transform: scale 1.2;
+  -moz-transform: scale 1.2;
+  transform: scale 1.2;
 }
 #Contacto #info-contacto-general .info-contacto .info .icono img {
   width: 10rem;
