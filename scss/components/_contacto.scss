@@ -31,12 +31,10 @@
                                  "telefono telefono mail mail";
 
             .info{
-                border: 0.2rem solid var(--main-color);
-                border-radius: 5rem;
-                box-shadow: 0 0 5rem;
+                @extend %border-r;
+                @include shadow (nth($colores, 4));
                 background-color: nth($colores, 1 );
                 padding: $margin-dos;
-                transition: all 1s ease;
 
                 h3, p {
                     color: nth($colores, 4 );
@@ -44,30 +42,18 @@
 
                 &:nth-child(1) {
                     grid-area: ubicacion;
-                    &:hover{
-                        @include prefijos(scale (1.2));
-                    }
                 }
 
                 &:nth-child(2) {
                     grid-area: horario;
-                    &:hover{
-                        @include prefijos(scale (1.2));
-                    }
                 }
                 
                 &:nth-child(3) {
                     grid-area: telefono;
-                    &:hover{
-                        @include prefijos(scale (1.2));
-                    }
                 }
                 
                 &:nth-child(4) {
                     grid-area: mail;
-                    &:hover{
-                        @include prefijos(scale (1.2));
-                    }
                 }
 
                 .icono{

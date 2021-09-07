@@ -29,7 +29,7 @@
   height: 20rem;
 }
 
-#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
+#Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
   border: 0.2rem solid #212529;
   border-radius: 5rem;
 }
@@ -362,12 +362,9 @@
   grid-template-areas: "ubicacion ubicacion horario horario" "ubicacion ubicacion horario horario" "telefono telefono mail mail" "telefono telefono mail mail";
 }
 #Contacto #info-contacto-general .info-contacto .info {
-  border: 0.2rem solid var(--main-color);
-  border-radius: 5rem;
-  box-shadow: 0 0 5rem;
+  box-shadow: 0 0 5rem #212529;
   background-color: #e5e5e5;
   padding: 5rem;
-  transition: all 1s ease;
 }
 #Contacto #info-contacto-general .info-contacto .info h3, #Contacto #info-contacto-general .info-contacto .info p {
   color: #212529;
@@ -375,38 +372,14 @@
 #Contacto #info-contacto-general .info-contacto .info:nth-child(1) {
   grid-area: ubicacion;
 }
-#Contacto #info-contacto-general .info-contacto .info:nth-child(1):hover {
-  -webkit-transform: scale 1.2;
-  -o-transform: scale 1.2;
-  -moz-transform: scale 1.2;
-  transform: scale 1.2;
-}
 #Contacto #info-contacto-general .info-contacto .info:nth-child(2) {
   grid-area: horario;
-}
-#Contacto #info-contacto-general .info-contacto .info:nth-child(2):hover {
-  -webkit-transform: scale 1.2;
-  -o-transform: scale 1.2;
-  -moz-transform: scale 1.2;
-  transform: scale 1.2;
 }
 #Contacto #info-contacto-general .info-contacto .info:nth-child(3) {
   grid-area: telefono;
 }
-#Contacto #info-contacto-general .info-contacto .info:nth-child(3):hover {
-  -webkit-transform: scale 1.2;
-  -o-transform: scale 1.2;
-  -moz-transform: scale 1.2;
-  transform: scale 1.2;
-}
 #Contacto #info-contacto-general .info-contacto .info:nth-child(4) {
   grid-area: mail;
-}
-#Contacto #info-contacto-general .info-contacto .info:nth-child(4):hover {
-  -webkit-transform: scale 1.2;
-  -o-transform: scale 1.2;
-  -moz-transform: scale 1.2;
-  transform: scale 1.2;
 }
 #Contacto #info-contacto-general .info-contacto .info .icono img {
   width: 10rem;
