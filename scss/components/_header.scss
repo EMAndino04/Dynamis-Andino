@@ -1,9 +1,10 @@
 /* Header */
 
 #Inicio{
-    background-color: nth($colores, 4 );
+    background-color: nth($colores, 6 );
 
     video{
+        opacity: 60%;
         margin:0;
         height: 100%;
         width: 100%;

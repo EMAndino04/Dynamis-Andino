@@ -4,6 +4,7 @@
         @extend %titular;
     }
         .servicios-articulos {
+            margin-bottom: 0;
             @extend %grid-articulo;    
             
             .articulo {
@@ -53,16 +54,4 @@
                 }      
             }
         }
-.ver-mas{
-    background-color: nth($colores, 4 ); /* Ancla del index.html */
-    
-    a{
-        font-family: 'Oswald', sans-serif;
-        font-size: 5rem;
-        color: nth($colores, 1 );
-        &:hover {
-            color: nth($colores, 3 );
-        }
-    }
-} 
 }

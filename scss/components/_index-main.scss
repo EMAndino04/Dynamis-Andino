@@ -7,10 +7,8 @@
         margin: $margin;
 
         .carousel{
-            margin: 0 $margin*2 ;
             background-color: nth($colores, 4 );
             @extend %border-r;
-            width: 75%;
         }
     }
 

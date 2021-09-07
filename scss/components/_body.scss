@@ -46,7 +46,6 @@
         height: 40rem; 
 
         .presentacion{
-            position: relative;
             top: 10rem;
             margin-bottom: $margin*3;
             .h1{
@@ -61,7 +60,6 @@
                 }
     
                 &:last-child{
-                    position: absolute;
                     top: 5rem;
                     left: 70rem;
                 }
