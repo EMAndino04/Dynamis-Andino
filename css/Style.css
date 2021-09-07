@@ -26,15 +26,10 @@
 #Servicios-index .titular {
   display: flex;
   align-items: flex-end;
-  background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
   height: 20rem;
 }
 
-.body .titular {
-  background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
-}
-
-#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo .image, #Servicios .contenedor .contenido .articulo .video, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-uno .carousel {
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo .image, #Servicios .contenedor .contenido .articulo .video, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
   border: 0.2rem solid #212529;
   border-radius: 5rem;
 }
@@ -83,8 +78,22 @@
   font-size: 2.5rem;
   color: #e5e5e5;
 }
+.body .h1 {
+  margin: 0 10rem;
+  font-size: 10rem;
+  color: #212529;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+}
+.body .h1:first-child {
+  text-shadow: 0 0 2rem black;
+  color: #919eaa;
+}
+.body .h1:last-child {
+  text-shadow: 0 0 2rem #e5e5e5;
+}
 .body .titular .titulo {
-  text-shadow: 0 0 10rem #e5e5e5;
+  text-shadow: 0 0 2rem #e5e5e5;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 10rem;
@@ -125,24 +134,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10rem;
-}
-.main .section-uno .h1 {
-  font-size: 10rem;
-  color: #212529;
-  font-weight: bolder;
-  font-family: "Oswald", sans-serif;
-}
-.main .section-uno .h1:first-child {
-  text-shadow: 0 0 2rem black;
-  color: #919eaa;
-}
-.main .section-uno .carousel {
-  position: relative;
-  background-color: #212529;
+  background-image: url("https://i.ibb.co/GdmL3jz/Preview-4-Reis-20180518.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem;
 }
 .main .mobile {
   display: none;
+}
+.main .gradient {
+  height: 40rem;
+  background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
+}
+.main .section-carousel {
+  display: flex;
+  align-items: center;
+  margin: 10rem;
+}
+.main .section-carousel .carousel {
+  background-color: #212529;
 }
 
 #Servicios-index {
@@ -152,10 +163,10 @@
   margin-bottom: 0;
 }
 #Servicios-index .servicios-articulos .articulo {
-  text-shadow: 0 0 2rem #212529;
   box-shadow: 0 0 5rem #e5e5e5;
 }
 #Servicios-index .servicios-articulos .articulo h2 {
+  text-shadow: 0 0 2rem black;
   font-family: "Oswald", sans-serif;
   font-size: 10rem;
   color: #e5e5e5;
@@ -187,6 +198,8 @@
   background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+#Servicios-index .servicios-articulos .articulo:nth-child(4) h2 {
   text-shadow: 0 0 2rem #e5e5e5;
 }
 
@@ -227,7 +240,7 @@
   box-shadow: 0 0 5rem #212529;
 }
 #sobre-nosotros .gradient {
-  background: linear-gradient(360deg, black, #212529, #343a40, #919eaa, #e5e5e5);
+  background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
   height: 10rem;
 }
 #sobre-nosotros #founder {
