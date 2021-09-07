@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 /* Listas */
 /* Variables */
-#sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo {
+#sobre-nosotros .nosotros .articulo, #Servicios-index .servicios-articulos .articulo {
   background-color: #e5e5e5;
   padding: 5rem;
   margin: 5rem;
@@ -34,7 +34,7 @@
   background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
 }
 
-#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-uno .carousel {
+#portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, #Servicios .contenedor .contenido .articulo .image, #Servicios .contenedor .contenido .articulo .video, #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-uno .carousel {
   border: 0.2rem solid #212529;
   border-radius: 5rem;
 }
@@ -216,14 +216,21 @@
   margin: 10rem;
 }
 #Servicios .contenedor .contenido .articulo {
+  background-color: #212529;
+  margin-bottom: 20rem;
   box-shadow: 0 0 5rem #212529;
+}
+#Servicios .contenedor .contenido .articulo .image, #Servicios .contenedor .contenido .articulo .video {
+  box-shadow: 0 0 0.5rem #e5e5e5;
 }
 #Servicios .contenedor .contenido .articulo h2 {
   margin: 5rem;
 }
+#Servicios .contenedor .contenido .articulo p {
+  margin: 2rem;
+}
 #Servicios .contenedor .contenido .articulo h2, #Servicios .contenedor .contenido .articulo p {
-  color: #212529;
-  background-color: #e5e5e5;
+  color: #e5e5e5;
   padding: 0.5rem;
 }
 
