@@ -83,28 +83,6 @@
   font-size: 2.5rem;
   color: #e5e5e5;
 }
-.body .hr {
-  background: linear-gradient(180deg, black, #212529, #343a40, #919eaa, #e5e5e5);
-  height: 40rem;
-}
-.body .hr .presentacion {
-  top: 10rem;
-  margin-bottom: 30rem;
-}
-.body .hr .presentacion .h1 {
-  font-size: 10rem;
-  color: #212529;
-  font-weight: bolder;
-  font-family: "Oswald", sans-serif;
-}
-.body .hr .presentacion .h1:first-child {
-  text-shadow: 0 0 10rem #e5e5e5;
-  color: #919eaa;
-}
-.body .hr .presentacion .h1:last-child {
-  top: 5rem;
-  left: 70rem;
-}
 .body .titular .titulo {
   text-shadow: 0 0 10rem #e5e5e5;
   font-family: "Oswald", sans-serif;
@@ -145,10 +123,22 @@
 /* Fin Header */
 .main .section-uno {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 10rem;
 }
+.main .section-uno .h1 {
+  font-size: 10rem;
+  color: #212529;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+}
+.main .section-uno .h1:first-child {
+  text-shadow: 0 0 2rem black;
+  color: #919eaa;
+}
 .main .section-uno .carousel {
+  position: relative;
   background-color: #212529;
 }
 .main .mobile {

@@ -3,12 +3,24 @@
 
     .section-uno{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         margin: $margin;
+        .h1{
+            font-size: 10rem;
+            color: nth($colores, 4 );
+            font-weight: bolder;
+            font-family: "Oswald", sans-serif;            
+            &:first-child{
+                text-shadow: 0 0 2rem nth($colores, 6 );
+                color: nth($colores, 2 );
+            }
+        }   
 
         .carousel{
+            position: relative;
             background-color: nth($colores, 4 );
-            @extend %border-r;
+            @extend %border-r; 
         }
     }
 
