@@ -570,6 +570,9 @@
   .body #Servicios .contenedor .contenido .articulo .image-dos {
     margin-bottom: 2rem;
   }
+  .body #Servicios .contenedor .contenido .articulo .image-mobile {
+    margin-left: 3rem;
+  }
   .body #portfolio #portfolio-galeria-imagenes .titular {
     animation: none;
   }
