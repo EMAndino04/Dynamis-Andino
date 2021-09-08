@@ -29,7 +29,7 @@
   height: 20rem;
 }
 
-#Contacto #mensaje .articulo h2, #Contacto #mensaje .articulo p, #Contacto #mensaje .articulo, #Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
+#Contacto #mensaje .formulario, #Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
   border: 0.2rem solid #212529;
   border-radius: 5rem;
 }
@@ -385,75 +385,29 @@
 #Contacto #mapa {
   margin: 10rem 0;
 }
-#Contacto #mensaje .articulo {
-  background-color: #e5e5e5;
-  margin: 5rem;
-  padding: 0;
+#Contacto #mensaje {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+}
+#Contacto #mensaje .formulario {
+  width: 45rem;
+  margin: 5rem;
+  background-color: #212529;
+  padding: 10px 20px;
+  box-sizing: border-box;
   box-shadow: 0 0 5rem #212529;
 }
-#Contacto #mensaje .articulo h2 {
-  margin: 5rem;
+#Contacto #mensaje .formulario h2 {
+  color: #e5e5e5;
 }
-#Contacto #mensaje .articulo h2, #Contacto #mensaje .articulo p {
-  color: #212529;
-  background-color: #e5e5e5;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-#Contacto #mensaje .articulo .send-mensaje {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 10rem);
-  margin: 10rem;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form input {
-  width: 80%;
-  height: 3rem;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(1) {
-  grid-column: 3/4;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(2) {
-  grid-column: 4/5;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(3) {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(4) {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(5) {
-  grid-column: 2/6;
-  grid-row: 3/4;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(5) input {
-  width: 50%;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(6) {
-  grid-column: 3/5;
-  grid-row: 4/5;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(6) textarea {
+#Contacto #mensaje .formulario .casilla {
   width: 100%;
-  height: 20rem;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(6) input {
-  width: 10rem;
-  height: 5rem;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(7) {
-  grid-column: 3/5;
-  grid-row: 5/6;
-}
-#Contacto #mensaje .articulo .send-mensaje .grid-form:nth-child(7) input {
-  width: 40%;
-  height: 5rem;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-family: "roboto";
+  font-size: 20px;
+  border: none;
 }
 
 /* Footer */

@@ -149,42 +149,16 @@
         <hr>
         <!-- Section mensaje-->
         <section id="mensaje">
-            <div data-aos="fade-right" data-aos-duration="2000">
-                <div class="titular-dos">
-                    <h2>ENVIANOS UN MENSAJE</h2>
-                </div>
-            </div>
-            <div class="articulo" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="send-mensaje " >
-                    <div class="grid-form">
-                        <h4>Nombre</h4>
-                        <input type="text" >
-                    </div>
-                    <div class="grid-form">
-                        <h4>Apellido</h4>
-                        <input type="text" >
-                    </div>
-                    <div class="grid-form">
-                        <h4>Mail</h4>
-                        <input type="email" >
-                    </div>
-                    <div class="grid-form">
-                        <h4>Pais</h4>
-                        <input type="text" >
-                    </div>
-                    <div class="grid-form">
-                        <h4>Asunto</h4>
-                        <input type="text" >
-                    </div>
-                    <div class="grid-form form-floating">
-                        <h4>Mensaje</h4>
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    </div>
-                    <div class="grid-form">
-                        <input type="submit">
-                    </div>
-                </div>
-            </div>
+            <form action="" class="formulario" data-aos="zoom-in" data-aos-duration="2000">
+                <h2>ENVIANOS UN MENSAJE</h2>
+                <input class="casilla" type="text" placeholder="Nombre" name="nombre" >
+                <input class="casilla" type="text" placeholder="Apellido" name="apellido" >
+                <input class="casilla" type="email" placeholder="Email" name="email">
+                <input class="casilla" type="text" placeholder="Pais" name="pais" >
+                <input class="casilla" type="text" placeholder="Asunto" name="asunto" >
+                <textarea class="casilla" placeholder="Deja tu mensaje aqui..." id="floatingTextarea2" style="height: 100px"></textarea>
+                <input class="casilla" type="submit" value="ENVIAR">
+            </form>
         </section>
     </main>
         <!-- Footer -->
