@@ -30,10 +30,6 @@
                 font-size: 5rem;
             }
         }
-
-        .hr{
-            display: none;
-        }
         
         #Inicio {
             .navbar{
@@ -62,9 +58,9 @@
         
 
 
-         #Servicios {
-             margin: 0;
-             padding: 0;
+        #Servicios {
+            margin: 0;
+            padding: 0;
 
             h1{
                 font-size: 5rem;
@@ -72,8 +68,7 @@
             }
             
             .contenido {
-                margin: 0px;
-               
+                margin: 0px;               
                 .articulo{
                     border-radius: none;
                     padding: 1rem;
@@ -84,13 +79,12 @@
 
             .servicios-articulos {
                 display: none;
-               }
+            }
             
             .ver-mas {
                 display: none;
             }
-         }
-              
+        }              
     
         .mobile {
             display: flex;
@@ -157,17 +151,14 @@
                     }    
                 }  
         }
-
         
         #sobre-nosotros {
-
             .articulo{
                 border: none;
                 border-radius: none;
                 box-shadow: none;
                 margin: 0px;
             }
-
             #founder{
                 padding: 1rem;
                 .articulo{
@@ -179,17 +170,14 @@
                     margin: 0px;
                 }
             }
-        }
-    
-        
+        }        
         #Contacto{
             #info-contacto-general {
                 .info-contacto {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    margin: 1rem;
-    
+                    margin: 1rem;    
                     .info{
                         &:nth-child(1):hover{
                             transform: scale(1.2);
@@ -226,11 +214,11 @@
                     
                     .grid-form{
                         input {
-                           width: 80%;
-                       }
-                       textarea {
-                           width: 100%;
-                       }
+                            width: 80%;
+                        }
+                        textarea {
+                            width: 100%;
+                        }
                     }
     
                 }    

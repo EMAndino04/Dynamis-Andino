@@ -141,10 +141,6 @@
 .main .mobile {
   display: none;
 }
-.main .gradient {
-  height: 40rem;
-  background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
-}
 .main .section-carousel {
   display: flex;
   align-items: center;
@@ -509,9 +505,6 @@
     margin-left: 0px;
     text-align: center;
     font-size: 5rem;
-  }
-  .body .hr {
-    display: none;
   }
   .body #Inicio .navbar {
     position: relative;
