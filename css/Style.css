@@ -482,7 +482,7 @@
 @media only screen and (max-width: 676px) {
   /*MOBILE*/
   .body h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .body h3 {
     font-size: 1.8rem;
@@ -493,37 +493,54 @@
   .body p {
     font-size: 1.7rem;
   }
-  .body .titular {
-    animation: none;
-    background: #e5e5e5;
+  .body .section-uno {
+    padding: 0;
+    height: 20rem;
   }
-  .body .titular h1 {
-    margin: 5rem;
-    font-size: 5rem;
+  .body .section-uno .container .h1 {
+    transition: none;
+    filter: none;
+    opacity: 100%;
+    font-size: 3rem;
   }
-  .body .titular h2 {
-    margin-left: 0px;
-    text-align: center;
-    font-size: 5rem;
+  .body .section-uno .container .h1:nth-child(1) {
+    color: #e5e5e5;
   }
   .body #Inicio .navbar {
     position: relative;
   }
-  .body .main .h1 {
+  .body .main #Servicios-index {
+    display: none;
+  }
+  .body .main .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .body .main .mobile .titular {
+    height: 10rem;
+  }
+  .body .main .mobile .titular .titulo {
+    text-shadow: 0 0 2rem #e5e5e5;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    margin-left: 0px;
     font-size: 3rem;
-    margin: 5rem;
+    color: black;
   }
-  .body .main .h2 {
-    font-size: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+  .body .main .mobile .articulo-mobile {
+    margin-bottom: 5rem;
+  }
+  .body .main .mobile .articulo-mobile .img {
+    width: 100%;
+  }
+  .body .main .mobile .articulo-mobile h2, .body .main .mobile .articulo-mobile p {
     color: #212529;
-    font-weight: bolder;
-    font-family: "Oswald", sans-serif;
   }
-  .body .main .section-uno {
-    margin: 5rem 1rem;
-    padding: 0;
+  .body .main .section-carousel {
+    margin-top: 5rem;
+  }
+  .body .main .section-carousel .carousel img {
+    height: auto;
   }
   .body #Servicios {
     margin: 0;
@@ -541,34 +558,6 @@
     padding: 1rem;
     margin: 0.5rem;
     margin-bottom: 5rem;
-  }
-  .body #Servicios .servicios-articulos {
-    display: none;
-  }
-  .body #Servicios .ver-mas {
-    display: none;
-  }
-  .body .mobile {
-    display: flex;
-    flex-direction: column;
-  }
-  .body .mobile .img {
-    width: 100%;
-  }
-  .body .mobile .articulo-mobile {
-    margin-bottom: var(--margin-dos);
-  }
-  .body .mobile .articulo-mobile h2, .body .mobile .articulo-mobile p {
-    color: #212529;
-  }
-  .body .mobile .articulo-mobile h2 {
-    font-size: 3rem;
-  }
-  .body .mobile .articulo-mobile p {
-    font-size: 2rem;
-  }
-  .body .mobile .ver-mas-mobile {
-    background-color: #e5e5e5;
   }
   .body #portfolio #portfolio-galeria-imagenes .titular {
     animation: none;
@@ -626,26 +615,10 @@
   .body #Contacto #info-contacto-general .info-contacto .info:nth-child(4):hover {
     transform: scale(1.2);
   }
-  .body #Contacto #mensaje .articulo {
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-    margin: 0px;
-  }
-  .body #Contacto #mensaje .articulo .send-mensaje {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-  }
-  .body #Contacto #mensaje .articulo .send-mensaje .grid-form input {
-    width: 80%;
-  }
-  .body #Contacto #mensaje .articulo .send-mensaje .grid-form textarea {
-    width: 100%;
-  }
   .body #Footer {
     /* FOOTER */
     flex-direction: column;
+    align-items: center;
     height: 40rem;
   }
   .body #Footer .back-home {

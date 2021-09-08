@@ -2,35 +2,37 @@
     /*MOBILE*/
     .body{
         h2{
-            font-size: 4rem;
+            font-size: $size-mobile*2.5;
         }
         
         h3 {
-            font-size: 1.8rem;
+            font-size: $size-mobile*1.8;
         }
         
         h4 {
-            font-size: 1.3rem;
+            font-size: $size-mobile*1.3;
         }
         
         p{
-            font-size: 1.7rem;
-        }
-
-        .titular {
-            animation: none;
-            background: nth($colores, 1 );
-            h1 {
-                margin: 5rem;
-                font-size: 5rem;
-            }
-            h2{
-                margin-left: 0px;
-                text-align: center;
-                font-size: 5rem;
-            }
+            font-size: $size-mobile*1.7;
         }
         
+        .section-uno {
+            padding: 0;
+            height: 20rem;
+            .container{
+                .h1{
+                    transition: none;
+                    filter: none;
+                    opacity: 100%;
+                    font-size: $size-mobile*3;
+                    &:nth-child(1){
+                        color: nth($colores, 1 );
+                    }
+                }
+            }
+        }
+
         #Inicio {
             .navbar{
                 position: relative;
@@ -38,30 +40,49 @@
         }
         
         .main{
-            .h1{
-                font-size: 3rem;
-                margin: $margin-dos;
+            #Servicios-index{
+                display: none;
             }
-            .h2{
-                font-size: 5rem;
+            .mobile {
+                display: flex;
+                flex-direction: column;
+                .titular {
+                    height: 10rem;
+                    .titulo{
+                        @include text-shadow(nth($colores, 1));
+                        font-family: nth($fonts, 3 );
+                        text-transform: uppercase;
+                        margin-left: 0px;
+                        font-size: $size-mobile*3;
+                        color: nth($colores, 6 );
+                    }
+                }
+                
+                .articulo-mobile {    
+                    margin-bottom: $margin-dos;   
+                    .img {
+                        width: 100%;
+                    }
+                    h2, p {
+                        color: nth($colores, 4 );
+                    }    
+                }       
+            }
+            .section-carousel{
                 margin-top: $margin-dos;
-                margin-bottom: $margin;
-                color: nth($colores, 4 );
-                font-weight: bolder;
-                font-family: "Oswald", sans-serif;
-            }
-            .section-uno {
-                margin: 5rem 1rem ;
-                padding: 0;
+                .carousel{
+                    img{
+                        height: auto;
+                    }
+                }
             }
         }
         
-
+        
 
         #Servicios {
             margin: 0;
             padding: 0;
-
             h1{
                 font-size: 5rem;
                 margin-top: $margin-dos;
@@ -76,47 +97,8 @@
                     margin-bottom: $margin-dos;
                 }
             }
-
-            .servicios-articulos {
-                display: none;
-            }
-            
-            .ver-mas {
-                display: none;
-            }
         }              
     
-        .mobile {
-            display: flex;
-            flex-direction: column;
-
-            .img {
-                width: 100%;
-            }
-        
-            .articulo-mobile {
-
-                margin-bottom: var(--margin-dos);
-
-                h2, p {
-                    color: nth($colores, 4 );
-                }
-
-                h2{
-                    font-size: 3rem;
-                }
-
-                p{
-                    font-size: 2rem;
-                }
-            }
-
-            .ver-mas-mobile{
-                background-color: nth($colores, 1 );
-                
-            }
-    
-        }
     
         
         
@@ -197,45 +179,18 @@
                         &:nth-child(4):hover{
                             transform: scale(1.2);
                         }
-                    }
-    
+                    }   
                 }
         }     
-        #mensaje{   
-            .articulo{ 
-                border: none;
-                border-radius: none;
-                box-shadow: none;
-                margin: 0px;
-                .send-mensaje {
-                    display:flex;
-                    flex-direction: column;        
-                    margin: 2rem;
-                    
-                    .grid-form{
-                        input {
-                            width: 80%;
-                        }
-                        textarea {
-                            width: 100%;
-                        }
-                    }
-    
-                }    
-            }
-    }
-
     } 
         #Footer {
-            /* FOOTER */
+        /* FOOTER */
             flex-direction: column;
+            align-items: center;
             height: 40rem;
-
             .back-home {
                 margin-left: 0;
             }
-        }
-    
-
+        }    
     }
 }
