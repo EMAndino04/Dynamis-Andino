@@ -20,7 +20,10 @@
         .articulo {
             @extend %articulo;
             @extend %border-r;
-            @include shadow(nth($colores,1));                
+            @include shadow(nth($colores,1));    
+            &:hover{
+                box-shadow: 0 0 2rem nth($colores, 7 );
+            }           
             h2 {
                 @include text-shadow(nth($colores, 6));
                 font-family: nth($fonts, 3 );
@@ -33,7 +36,7 @@
                 background-image: url("https://i.ibb.co/wpZhsLs/3.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: center; 
             }            
             &:nth-child(2) {
                 grid-area: renderizado;

@@ -1,7 +1,7 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 /* Listas */
 /* Variables */
 #sobre-nosotros .nosotros .articulo, #Servicios-index .servicios-articulos .articulo {
@@ -29,7 +29,7 @@
   height: 20rem;
 }
 
-#Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
+#Contacto #mensaje .articulo h2, #Contacto #mensaje .articulo p, #Contacto #mensaje .articulo, #Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .section-carousel .carousel {
   border: 0.2rem solid #212529;
   border-radius: 5rem;
 }
@@ -53,7 +53,7 @@
 }
 .body a {
   font-size: 2rem;
-  color: var(--main-color);
+  color: #e5e5e5;
   text-decoration: none;
 }
 .body a:hover {
@@ -62,7 +62,7 @@
 .body h1,
 .body h2,
 .body h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
 }
 .body h2 {
   font-size: 4rem;
@@ -74,7 +74,7 @@
   font-size: 1.8rem;
 }
 .body p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro";
   font-size: 2.5rem;
   color: #e5e5e5;
 }
@@ -89,11 +89,10 @@
   height: 100rem;
 }
 .body .section-uno .h1 {
-  margin: 0 10rem;
   font-size: 10rem;
   color: #212529;
   font-weight: bolder;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
 }
 .body .section-uno .h1:first-child {
   text-shadow: 0 0 2rem black;
@@ -101,17 +100,6 @@
 }
 .body .section-uno .h1:last-child {
   text-shadow: 0 0 2rem #e5e5e5;
-}
-.body .titular .titulo {
-  text-shadow: 0 0 2rem #e5e5e5;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 10rem;
-  margin: 0 0 2rem 10rem;
-  color: black;
-}
-.body .titular p {
-  margin-bottom: 5rem;
 }
 
 /* Header */
@@ -162,15 +150,29 @@
 #Servicios-index {
   background-color: #212529;
 }
+#Servicios-index .titular .titulo {
+  text-shadow: 0 0 2rem #e5e5e5;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 10rem;
+  margin: 0 0 2rem 10rem;
+  color: black;
+}
+#Servicios-index .titular p {
+  margin-bottom: 5rem;
+}
 #Servicios-index .servicios-articulos {
   margin-bottom: 0;
 }
 #Servicios-index .servicios-articulos .articulo {
   box-shadow: 0 0 5rem #e5e5e5;
 }
+#Servicios-index .servicios-articulos .articulo:hover {
+  box-shadow: 0 0 2rem #0077b6;
+}
 #Servicios-index .servicios-articulos .articulo h2 {
   text-shadow: 0 0 2rem black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-size: 10rem;
   color: #e5e5e5;
   padding: 0.5rem;
@@ -273,7 +275,6 @@
 #sobre-nosotros #founder .articulo h3 {
   margin-bottom: 5rem;
   color: #212529;
-  font-size: 3.4rem;
 }
 #sobre-nosotros #founder .articulo p {
   color: #212529;
@@ -293,7 +294,7 @@
 }
 #portfolio .titular-dos h2 {
   color: #343a40;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   margin: 0 10rem 2rem 0;
 }
 #portfolio #portfolio-galeria-imagenes .portfolio-galeria {
@@ -350,7 +351,7 @@
 }
 #Contacto .titular-dos h2 {
   color: #343a40;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   margin: 0 10rem 2rem 0;
 }
 #Contacto #info-contacto-general .info-contacto {
@@ -395,9 +396,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  border: 0.2rem solid #212529;
-  border-radius: 5rem;
-  box-shadow: 0 0 5rem;
+  box-shadow: 0 0 5rem #212529;
 }
 #Contacto #mensaje .articulo h2 {
   margin: 5rem;
@@ -407,8 +406,6 @@
   background-color: #e5e5e5;
   font-weight: bold;
   padding: 0.5rem;
-  border-radius: 5rem;
-  box-shadow: 0 0 5rem #212529;
 }
 #Contacto #mensaje .articulo .send-mensaje {
   display: grid;

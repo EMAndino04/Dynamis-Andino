@@ -9,32 +9,26 @@
 
     a{
         font-size: $a;
-        color: nth($colroes, 1 );
+        color: nth($colores, 1 );
         text-decoration: none;
-
         &:hover{
             color: nth($colores, 3);
         }
     }
-
     h1,
     h2, 
     h3 {
     font-family:  nth($fonts, 1 );
     }
-
     h2{
         font-size: $h2;
-    }
-    
+    }    
     h3 {
         font-size: $h3;
-    }
-    
+    }    
     h4 {
         font-size: $h4;
-    }
-    
+    }    
     p{
         font-family:  nth($fonts, 2 );
         font-size: $p;
@@ -50,11 +44,10 @@
         background-position: center;
         height: 100rem;
             .h1{
-                margin: 0 $margin;
                 font-size: $h1;
                 color: nth($colores, 4 );
                 font-weight: bolder;
-                font-family: nth($fonts, 3 ) ;         
+                font-family: nth($fonts, 3 );
                 &:first-child{
                     @include text-shadow(nth($colores,6));
                     color: nth($colores, 2 );
