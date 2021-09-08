@@ -13,7 +13,11 @@
         display: flex;
         align-items: center;
         .carousel{
-            background-color: nth($colores, 4 );
+            background-color: nth($colores, 1 );
+            margin-bottom: $margin-dos;
+            img{
+                height: 100vh;
+            }
         }
     }
 }

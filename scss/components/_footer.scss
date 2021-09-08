@@ -6,6 +6,7 @@
     background-color: nth($colores, 2 );
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
+    @include shadow(nth($colores, 4));
     h3, h4{
         color: nth($colores, 4 );
     }

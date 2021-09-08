@@ -24,7 +24,7 @@
             h2 {
                 @include text-shadow(nth($colores, 6));
                 font-family: nth($fonts, 3 );
-                font-size: $h1;
+                font-size: $h2*2;
                 color: nth($colores, 1 );
                 padding: 0.5rem;
             }

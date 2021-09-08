@@ -19,7 +19,7 @@
   display: grid;
   margin: 20rem 20rem 5rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 40rem);
+  grid-template-rows: repeat(4, 30rem);
   grid-template-areas: "modelado modelado renderizado renderizado" "modelado modelado renderizado renderizado" "produccion produccion realidad realidad" "produccion produccion realidad realidad";
 }
 
@@ -141,7 +141,11 @@
   align-items: center;
 }
 .main .section-carousel .carousel {
-  background-color: #212529;
+  background-color: #e5e5e5;
+  margin-bottom: 5rem;
+}
+.main .section-carousel .carousel img {
+  height: 100vh;
 }
 
 #Servicios-index {
@@ -167,7 +171,7 @@
 #Servicios-index .servicios-articulos .articulo h2 {
   text-shadow: 0 0 2rem black;
   font-family: "Oswald";
-  font-size: 10rem;
+  font-size: 8rem;
   color: #e5e5e5;
   padding: 0.5rem;
 }
@@ -415,6 +419,7 @@
   background-color: #919eaa;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
+  box-shadow: 0 0 5rem #212529;
 }
 #Footer h3, #Footer h4 {
   color: #212529;
