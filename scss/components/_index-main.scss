@@ -12,10 +12,8 @@
     .section-carousel{
         display: flex;
         align-items: center;
-        margin: $margin;
         .carousel{
             background-color: nth($colores, 4 );
-            @extend %border-r; 
         }
     }
 }

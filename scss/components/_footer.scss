@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-around;
     height: 20rem;
-    background-image: url("https://i.ibb.co/BV94qrV/Footer.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: nth($colores, 2 );
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
     h3, h4, a{
         color: nth($colores, 4 );
     }
@@ -15,7 +15,7 @@
         }
     }
     h3 {
-        font-size: 2rem;
+        font-size: $p;
     } 
     .nuestras-redes, 
     .firma  {
@@ -28,6 +28,7 @@
         flex-direction: column;
         justify-content: flex-end;
         margin-left: 10rem;
+        margin-bottom: $margin-dos;
     }    
     .nuestras-redes{
         img {
