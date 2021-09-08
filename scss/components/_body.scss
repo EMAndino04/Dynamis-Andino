@@ -8,8 +8,8 @@
 
 
     a{
-        font-size: 2rem;
-        color: var(--main-color);
+        font-size: $a;
+        color: nth($colroes, 1 );
         text-decoration: none;
 
         &:hover{
@@ -20,24 +20,24 @@
     h1,
     h2, 
     h3 {
-    font-family:  'Lato', sans-serif;
+    font-family:  nth($fonts, 1 );
     }
 
     h2{
-        font-size: 4rem;
+        font-size: $h2;
     }
     
     h3 {
-        font-size: 3.5rem;
+        font-size: $h3;
     }
     
     h4 {
-        font-size: 1.8rem;
+        font-size: $h4;
     }
     
     p{
-        font-family:  'Source Sans Pro', sans-serif;
-        font-size: 2.5rem;
+        font-family:  nth($fonts, 2 );
+        font-size: $p;
         color: nth($colores, 1);
     }
     .section-uno{
@@ -51,12 +51,12 @@
         height: 100rem;
             .h1{
                 margin: 0 $margin;
-                font-size: 10rem;
+                font-size: $h1;
                 color: nth($colores, 4 );
                 font-weight: bolder;
-                font-family: "Oswald", sans-serif;            
+                font-family: nth($fonts, 3 ) ;         
                 &:first-child{
-                    text-shadow: 0 0 2rem nth($colores, 6 );
+                    @include text-shadow(nth($colores,6));
                     color: nth($colores, 2 );
                 }
                 &:last-child{
@@ -64,23 +64,6 @@
                 }
             }  
     }
-
-    .titular{
-        .titulo {
-            @include text-shadow(nth($colores, 1));
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            font-size: 10rem;
-            margin: 0 0 2rem 10rem;
-            color: nth($colores, 6 );
-        }
-
-        p{
-            margin-bottom: $margin-dos;
-        }
-        
-    }
-    
 }
 
 

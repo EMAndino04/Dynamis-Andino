@@ -2,33 +2,28 @@
 
 #Inicio{
     background-color: nth($colores, 6 );
-
     video{
         opacity: 60%;
         margin:0;
         height: 100%;
         width: 100%;
     } /* Video dynamis de portada */
-
     .navbar{
         box-shadow: 0 0 10rem 2rem ;
         .navbar-brand {
             img {
                 width: 20rem;
             }
-
             &:hover{
                 -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
         }   
-
         .nav-item{
             &:hover{
                 box-shadow: 0 -20px 10px -10px  nth($colores, 4 ) inset;
             }
         }
     }
-
 } 
 /* Fin Header */

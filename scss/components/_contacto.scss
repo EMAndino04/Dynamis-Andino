@@ -3,47 +3,39 @@
         background-image: url("https://i.ibb.co/j67nXck/R3.png");
     }
     .titular-dos {
-
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         height: 11rem;
         background-color: nth($colores, 1 );
-
         h2{
             color: nth($colores, 5 ) ;
-            font-family: 'Oswald', sans-serif;
+            font-family: nth($fonts, 3 );
             margin: 0 10rem 2rem 0;
         }
     }
-
     #info-contacto-general{
-
         .info-contacto{
             margin: $margin;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
             gap: 5rem;
-            grid-template-areas: "ubicacion ubicacion horario horario"
-                                 "ubicacion ubicacion horario horario"
-                                 "telefono telefono mail mail"
-                                 "telefono telefono mail mail";
-
+            grid-template-areas:"ubicacion ubicacion horario horario"
+                                "ubicacion ubicacion horario horario"
+                                "telefono telefono mail mail"
+                                "telefono telefono mail mail";
             .info{
                 @extend %border-r;
                 @include shadow (nth($colores, 4));
                 background-color: nth($colores, 1 );
                 padding: $margin-dos;
-
                 h3, p {
                     color: nth($colores, 4 );
                 }
-
                 &:nth-child(1) {
                     grid-area: ubicacion;
                 }
-
                 &:nth-child(2) {
                     grid-area: horario;
                 }
@@ -55,29 +47,18 @@
                 &:nth-child(4) {
                     grid-area: mail;
                 }
-
                 .icono{
                     img{
                         width: 10rem;
                     }
-
                 }
-
             }
-
         }
-
-
-
-
     }
-
     #mapa {
         margin: $margin 0;
     }
-
     #mensaje{
-
         .articulo {
             background-color: nth($colores, 1 );
             margin: $margin-dos;
@@ -86,36 +67,28 @@
             flex-direction: column;
             justify-content: center;
             align-items: stretch;
-            border: 0.2rem solid nth($colores, 4 );
-            border-radius: 5rem;
-            box-shadow: 0 0 5rem;
-
+            @extend %border-r;
+            @include shadow(nth($colores, 4));
             h2 {
                 margin: $margin-dos;
-            }
-            
+            }            
             h2, p {
                 color: nth($colores, 4 );
                 background-color: nth($colores, 1 );
                 font-weight: bold;
                 padding: 0.5rem;
-                border-radius: 5rem;
-                box-shadow: 0 0 5rem nth($colores, 4 );
+                @extend %border-r;
             }
-
             .send-mensaje {
                 display: grid;
                 grid-template-columns: repeat(6,1fr);
                 grid-template-rows: repeat(3,10rem);
                 margin: $margin;
-
                 .grid-form{
-
                     input{
                         width: 80%;
                         height: 3rem;
                     }
-
                     &:nth-child(1){
                         grid-column: 3/4;
                     }
@@ -137,12 +110,10 @@
                     &:nth-child(5) {
                         grid-column: 2 / 6;
                         grid-row: 3/4;
-
                         input{
                             width: 50%;
                         }
                     }
-
                     &:nth-child(6){
                         grid-column: 3/5;
                         grid-row: 4/5;
@@ -151,29 +122,21 @@
                             width: 100%;
                             height: 20rem;
                         }
-
                         input {
                             width: 10rem;
                             height: 5rem;
                         }
                     }
-
                     &:nth-child(7){
                         grid-column: 3/5;
                         grid-row: 5/6;
-
                         input{
                             width: 40%;
                             height: 5rem;
                         }
                     }
-
                 }
             }
         }
-
     }
-
-
-
 }

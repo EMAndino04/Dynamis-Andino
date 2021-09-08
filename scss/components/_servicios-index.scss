@@ -2,58 +2,62 @@
     background-color: nth($colores, 4 );
     .titular{
         @extend %titular;
-    }
-        .servicios-articulos {
-            margin-bottom: 0;
-            @extend %grid-articulo;    
-            
-            .articulo {
-                @extend %articulo;
-                @extend %border-r;
-                @include shadow(nth($colores,1));
-                
-                h2 {
-                    @include text-shadow(nth($colores, 6));
-                    font-family: 'Oswald', sans-serif;
-                    font-size: 10rem;
-                    color: nth($colores, 1 );
-                    padding: 0.5rem;
-                }
-    
-                &:nth-child(1) {
-                    grid-area: modelado;
-                    background-image: url("https://i.ibb.co/wpZhsLs/3.jpg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-                
-                &:nth-child(2) {
-                    grid-area: renderizado;
-                    background-image: url("https://i.ibb.co/6mcZWpT/Final-Casa-Caro-Fer-2.jpg");
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                
-                }
-                
-                &:nth-child(3) {
-                    grid-area: produccion;
-                    background-image: url("https://i.ibb.co/WP9cCDT/youtube-3216705-1920.jpg");
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                &:nth-child(4) {
-                    grid-area: realidad;
-                    background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    h2{
-                        @include text-shadow( nth($colores, 1))
-                    }
-                }      
-            }
+        .titulo {
+            @include text-shadow(nth($colores, 1));
+            font-family: nth($fonts, 3 );
+            text-transform: uppercase;
+            font-size: $h1;
+            margin: 0 0 2rem 10rem;
+            color: nth($colores, 6 );
         }
+        p{
+            margin-bottom: $margin-dos;
+        }
+    }
+    .servicios-articulos {
+        margin-bottom: 0;
+        @extend %grid-articulo;                
+        .articulo {
+            @extend %articulo;
+            @extend %border-r;
+            @include shadow(nth($colores,1));                
+            h2 {
+                @include text-shadow(nth($colores, 6));
+                font-family: nth($fonts, 3 );
+                font-size: $h1;
+                color: nth($colores, 1 );
+                padding: 0.5rem;
+            }
+            &:nth-child(1) {
+                grid-area: modelado;
+                background-image: url("https://i.ibb.co/wpZhsLs/3.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }            
+            &:nth-child(2) {
+                grid-area: renderizado;
+                background-image: url("https://i.ibb.co/6mcZWpT/Final-Casa-Caro-Fer-2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;                
+            }    
+            &:nth-child(3) {
+                grid-area: produccion;
+                background-image: url("https://i.ibb.co/WP9cCDT/youtube-3216705-1920.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }            
+            &:nth-child(4) {
+                grid-area: realidad;
+                background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                h2{
+                    @include text-shadow( nth($colores, 1))
+                }
+            }      
+        }
+    }
 }

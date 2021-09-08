@@ -1,12 +1,9 @@
 #sobre-nosotros {
     margin: 0;
-
     .section-uno{
         background-image: url("https://i.ibb.co/JzszCQh/R3-0.png");
     }
-
     .nosotros {
-
         h2 {
             margin: $margin-dos;
         }
@@ -15,28 +12,22 @@
             color: nth($colores, 4 );
             padding: 0.5rem;
         }
-
         .articulo {
             @extend %articulo;
             @extend %border-r;
             @include shadow(nth($colores, 4));
         }
     }
-
     .gradient{
         background: map-get($inter-section, gradiente-white-black );
         height: 10rem;
     }
-
     /* founder */
-
     #founder{
         background-color: nth($colores, 4 );
         background-size: contain;
         padding: 5rem;
-
         
-
         .articulo {
             background-color: nth($colores, 1 );
             padding: $margin-dos;
@@ -46,23 +37,18 @@
             justify-content: center;
             @extend %border-r;
             @include shadow(nth($colores, 1));
-
             h2 {
                 color: nth($colores, 4 );
                 margin: $margin-dos, $margin-dos, 2.5rem;
-            }
-    
+            }   
             h3 {
                 margin-bottom: $margin-dos;
                 color: nth($colores, 4 );
-                font-size: 3.4rem;
-            }
-    
+            }    
             p{
                 color: nth($colores, 4 );
                 text-align: left;
             }
         }
     }
-
 }
