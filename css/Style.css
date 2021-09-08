@@ -85,18 +85,27 @@
   background-position: center;
   height: 100rem;
 }
-.body .section-uno .h1 {
+.body .section-uno .container .h1 {
+  display: inline-block;
   font-size: 10rem;
   color: #212529;
   font-weight: bolder;
   font-family: "Oswald";
+  filter: blur(1rem);
+  opacity: 50%;
+  transition: 0.2s;
 }
-.body .section-uno .h1:first-child {
+.body .section-uno .container .h1:first-child {
   text-shadow: 0 0 2rem black;
   color: #919eaa;
 }
-.body .section-uno .h1:last-child {
+.body .section-uno .container .h1:last-child {
   text-shadow: 0 0 2rem #e5e5e5;
+}
+.body .section-uno .container:hover .h1 {
+  transform: translateY(-3px) scale(1.1);
+  filter: none;
+  opacity: 100%;
 }
 
 /* Header */
@@ -181,6 +190,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(2) {
   grid-area: renderizado;
