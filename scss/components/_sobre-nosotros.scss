@@ -4,11 +4,11 @@
         background-image: url("https://i.ibb.co/JzszCQh/R3-0.png");
     }
     .nosotros {
-        h2 {
+        .h2 {
             margin: $margin-dos;
         }
         
-        h2, p {
+        .h2, .p {
             color: nth($colores, 4 );
             padding: 0.5rem;
         }
