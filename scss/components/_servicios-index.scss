@@ -20,10 +20,7 @@
         .articulo {
             @extend %articulo;
             @extend %border-r;
-            @include shadow(nth($colores,1));    
-            &:hover{
-                box-shadow: 0 0 2rem nth($colores, 7 );
-            }           
+            @include shadow(nth($colores,1));       
             h2 {
                 @include text-shadow(nth($colores, 6));
                 font-family: nth($fonts, 3 );
