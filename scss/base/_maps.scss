@@ -2,4 +2,10 @@ $inter-section: (
     gradiente-white-black:linear-gradient(360deg, nth($colores, 4), nth($colores, 5) , nth($colores, 2), nth($colores, 1)),
 
     gradiente-black-white:linear-gradient(180deg, nth($colores, 4), nth($colores, 5) , nth($colores, 2), nth($colores, 1))
+);
+
+$social: (
+    facebook: #3b5999,
+    instagram: #e4405f,
+    linkedin: #007785
 )

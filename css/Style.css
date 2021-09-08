@@ -38,6 +38,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 :root {
@@ -415,11 +416,8 @@
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
 }
-#Footer h3, #Footer h4, #Footer a {
+#Footer h3, #Footer h4 {
   color: #212529;
-}
-#Footer a:hover {
-  color: #6c757d;
 }
 #Footer h3 {
   font-size: 2.5rem;
@@ -427,8 +425,8 @@
 #Footer .nuestras-redes,
 #Footer .firma {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #Footer .back-home {
   display: flex;
@@ -437,8 +435,36 @@
   margin-left: 10rem;
   margin-bottom: 5rem;
 }
-#Footer .nuestras-redes img {
-  width: 4.5rem;
+#Footer .nuestras-redes .icons-list:hover .red {
+  filter: blur(0.2rem);
+}
+#Footer .nuestras-redes .icons-list .icons {
+  display: inline-block;
+  margin: 0 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+#Footer .nuestras-redes .icons-list .icons .red {
+  display: block;
+  padding: 0 1rem;
+  background-color: #343a40;
+  color: #e5e5e5;
+  box-shadow: 0 0 5rem #212529;
+  transition: 0.2s;
+}
+#Footer .nuestras-redes .icons-list .icons .red:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 0.5rem 0.5rem 0 #212529;
+  filter: none;
+}
+#Footer .nuestras-redes .icons-list .icons .facebook:hover {
+  background: #3b5999;
+}
+#Footer .nuestras-redes .icons-list .icons .instagram:hover {
+  background: #e4405f;
+}
+#Footer .nuestras-redes .icons-list .icons .linkedin:hover {
+  background: #007785;
 }
 
 /* Fin footer */

@@ -6,13 +6,8 @@
     background-color: nth($colores, 2 );
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
-    h3, h4, a{
+    h3, h4{
         color: nth($colores, 4 );
-    }
-    a {
-        &:hover {
-            color: nth($colores, 3 );
-        }
     }
     h3 {
         font-size: $p;
@@ -20,8 +15,8 @@
     .nuestras-redes, 
     .firma  {
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .back-home {
         display: flex;
@@ -31,9 +26,47 @@
         margin-bottom: $margin-dos;
     }    
     .nuestras-redes{
-        img {
-            width: 4.5rem;
+        .icons-list{
+            &:hover{
+                .red{
+                    filter: blur(0.2rem);
+                }
             }
+            .icons{
+                display: inline-block;
+                margin: 0 0.5rem;
+                width: 5rem;
+                height: 5rem;
+                .red{
+                    display: block;
+                    padding: 0 1rem;
+                    background-color: nth($colores, 5 );
+                    color: nth($colores, 1 );
+                    @include shadow(nth($colores, 4));
+                    transition: 0.2s;
+                    &:hover{
+                        transform: translateY(-3px) scale(1.1);
+                        box-shadow: 0 0.5rem 0.5rem 0 nth($colores, 4 );
+                        filter: none;
+                    }
+                }
+                .facebook{
+                    &:hover{
+                        background: map-get($social, facebook );
+                    }
+                }
+                .instagram{
+                    &:hover{
+                        background: map-get($social, instagram );
+                    }
+                }
+                .linkedin{
+                    &:hover{
+                        background: map-get($social, linkedin );
+                    }
+                }
+            }
+        }
     } 
 }
 
