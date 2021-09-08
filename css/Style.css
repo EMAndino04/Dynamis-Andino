@@ -123,9 +123,6 @@
   -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-#Inicio .navbar .nav-item:hover {
-  box-shadow: 0 -20px 10px -10px #212529 inset;
-}
 
 /* Fin Header */
 .main .section-uno {

@@ -19,11 +19,6 @@
                     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
         }   
-        .nav-item{
-            &:hover{
-                box-shadow: 0 -20px 10px -10px  nth($colores, 4 ) inset;
-            }
-        }
     }
 } 
 /* Fin Header */
