@@ -8,7 +8,7 @@
   background-color: #e5e5e5;
   padding: 5rem;
   margin: 5rem;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,9 +18,9 @@
 #Servicios-index .servicios-articulos {
   display: grid;
   margin: 20rem 20rem 5rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 100rem);
-  grid-template-areas: "modelado modelado modelado" "renderizado renderizado renderizado" "produccion produccion produccion" "realidad realidad realidad";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 40rem);
+  grid-template-areas: "modelado modelado renderizado renderizado" "modelado modelado renderizado renderizado" "produccion produccion realidad realidad" "produccion produccion realidad realidad";
 }
 
 #Servicios-index .titular {
@@ -53,11 +53,7 @@
 }
 .body a {
   font-size: 2rem;
-  color: #e5e5e5;
   text-decoration: none;
-}
-.body a:hover {
-  color: #6c757d;
 }
 .body h1,
 .body h2,
@@ -116,14 +112,14 @@
 #Inicio .navbar {
   box-shadow: 0 0 10rem 2rem;
 }
-#Inicio .navbar .navbar-brand img {
+#Inicio .navbar .navbar-brand .logo {
   width: 20rem;
 }
 #Inicio .navbar .navbar-brand:hover {
   -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-#Inicio .navbar .dropdown-menu {
+#Inicio .navbar .navbar-nav .nav-item .dropdown-menu {
   -webkit-animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

@@ -11,19 +11,22 @@
     .navbar{
         box-shadow: 0 0 10rem 2rem ;
         .navbar-brand {
-            img {
+            .logo {
                 width: 20rem;
             }
             &:hover{
                 -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
         }
-        .dropdown-menu{
-            -webkit-animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        .navbar-nav{
+            .nav-item{
+                .dropdown-menu{
+                    -webkit-animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
+            }
         }
-
     }
 } 
 /* Fin Header */

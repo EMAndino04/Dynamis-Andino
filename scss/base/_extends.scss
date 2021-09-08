@@ -2,7 +2,7 @@
     background-color: nth($colores, 1 );
     padding: $margin-dos;
     margin: $margin-dos;
-    margin-bottom: $margin*2;
+    margin-bottom: $margin;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,12 +12,12 @@
 %grid-articulo {
     display: grid;
                 margin: 20rem 20rem $margin-dos;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(4, 100rem);
-                grid-template-areas:"modelado modelado modelado"
-                                    "renderizado renderizado renderizado"
-                                    "produccion produccion produccion"
-                                    "realidad realidad realidad";
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(4, 40rem);
+                grid-template-areas:"modelado modelado renderizado renderizado"
+                                    "modelado modelado renderizado renderizado"
+                                    "produccion produccion realidad realidad"
+                                    "produccion produccion realidad realidad";
 }
 
 %titular {

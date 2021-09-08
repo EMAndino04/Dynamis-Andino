@@ -9,11 +9,7 @@
 
     a{
         font-size: $a;
-        color: nth($colores, 1 );
         text-decoration: none;
-        &:hover{
-            color: nth($colores, 3);
-        }
     }
     h1,
     h2, 
