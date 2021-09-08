@@ -83,27 +83,25 @@
         #Servicios {
             margin: 0;
             padding: 0;
-            h1{
-                font-size: 5rem;
-                margin-top: $margin-dos;
-            }
-            
-            .contenido {
-                margin: 0px;               
-                .articulo{
-                    border-radius: none;
-                    padding: 1rem;
-                    margin: 0.5rem;
-                    margin-bottom: $margin-dos;
+            .contenedor{
+                .contenido {
+                    margin: $size-mobile*3 0px;               
+                    .articulo{
+                        border-radius: 0px;
+                        padding: 0;
+                        margin: 0.5rem;
+                        margin-bottom: $margin-dos;
+                        text-align: left;
+                        .h2{
+                            text-align: center;
+                        }
+                        .video{
+                            height: 30rem;
+                        }
+                    }
                 }
             }
         }              
-    
-    
-        
-        
-        
-
         #portfolio {
             #portfolio-galeria-imagenes {
                 .titular{
@@ -115,8 +113,13 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center; 
-                        div{
+                        border-radius: 0;
+                        .grid-image{
                             transform: none;
+                            .image{
+                                border: none;
+                                border-radius: 0px;
+                            }
                         }
                     }
                 }
@@ -126,9 +129,11 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        margin-bottom: $margin-dos;
                         iframe{
                             margin: 1rem;
                             width: 100%;
+                            height: 30rem;
                         }
                     }    
                 }  
@@ -140,16 +145,24 @@
                 border-radius: none;
                 box-shadow: none;
                 margin: 0px;
+                text-align: left;
+
             }
             #founder{
                 padding: 1rem;
                 .articulo{
                     background-color: nth($colores , 1 );
-                    border: none;
-                    border-radius: none;
+                    border-radius: 1rem;
                     box-shadow: none;
                     padding: 1rem;
                     margin: 0px;
+                    .h2, .h3{
+                        text-align: center;
+                    }
+                    .h2{
+                        margin-top: 1rem;
+                        font-size: $size-mobile*3;
+                    }
                 }
             }
         }        
@@ -159,29 +172,18 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    margin: 1rem;    
-                    .info{
-                        &:nth-child(1):hover{
-                            transform: scale(1.2);
-                        }
-                        
-                        
-                        &:nth-child(2):hover{
-                            transform: scale(1.2);
-                        }
-                        
-                        
-                        &:nth-child(3):hover {
-                            transform: scale(1.2);
-                        }
-                        
-                        
-                        &:nth-child(4):hover{
-                            transform: scale(1.2);
-                        }
-                    }   
+                    margin: 1rem;      
                 }
-        }     
+            }
+            #mensaje{
+                .formulario{
+                    margin: $size-mobile;
+                    margin-bottom: $size-mobile*3;
+                    .h2{
+                        margin: $size-mobile*3;
+                    }
+                }
+            }                
     } 
         #Footer {
         /* FOOTER */

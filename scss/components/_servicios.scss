@@ -15,14 +15,14 @@
                         box-shadow: 0 0 0.5rem nth($colores, 1 );
                         @extend %border-r;
                     }
-                    h2 {
+                    .h2 {
                         margin: $margin-dos;
                     }
-                    p{
+                    .p{
                         margin: 2rem;
                     }
                     
-                    h2, p {
+                    .h2, .p {
                         color: nth($colores, 1 );
                         padding: 0.5rem;
                     }
