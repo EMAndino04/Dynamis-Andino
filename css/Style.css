@@ -174,7 +174,7 @@
 #Servicios-index .servicios-articulos .articulo {
   box-shadow: 0 0 5rem #e5e5e5;
 }
-#Servicios-index .servicios-articulos .articulo h2 {
+#Servicios-index .servicios-articulos .articulo .h2 {
   text-shadow: 0 0 2rem black;
   font-family: "Oswald";
   font-size: 8rem;
@@ -690,7 +690,7 @@
     height: 50rem;
     margin: 10rem 5rem;
   }
-  .body #Servicios-index .servicios-articulos .articulo h2 {
+  .body #Servicios-index .servicios-articulos .articulo .h2 {
     font-weight: bold;
   }
   .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {

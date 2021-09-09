@@ -16,12 +16,12 @@
     }
     .servicios-articulos {
         margin-bottom: 0;
-        @extend %grid-articulo;                
+        @extend %grid-articulo;              
         .articulo {
             @extend %articulo;
             @include shadow(nth($colores,1));  
             @extend %border-r;
-            h2 {
+            .h2 {
                 @include text-shadow(nth($colores, 6));
                 font-family: nth($fonts, 3 );
                 font-size: $h2*2;
