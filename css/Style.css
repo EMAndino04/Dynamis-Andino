@@ -508,61 +508,7 @@
     position: relative;
   }
   .body .main {
-    /*.mobile {
-        display: flex;
-        flex-direction: column;
-        .titular {
-            height: 10rem;
-            .titulo{
-                @include text-shadow(nth($colores, 1));
-                font-family: nth($fonts, 3 );
-                text-transform: uppercase;
-                margin-left: 0px;
-                font-size: $size-mobile*3;
-                color: nth($colores, 6 );
-            }
-        }
-
-        .articulo-mobile {    
-            margin-bottom: $margin-dos; 
-            .articulo{
-                &:nth-child(1) {
-                    background-image: url("https://i.ibb.co/9gJJ1vC/b.png");
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                &:nth-child(2) {
-                    background-image: url("https://i.ibb.co/9thyc7C/FINAL-TOCHI-270718-CONTRAFRENTE-B.png");
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                &:nth-child(3) {
-                    background-image: url("https://i.ibb.co/WP9cCDT/youtube-3216705-1920.png");
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                &:nth-child(4) {
-                    background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.png");
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                height: 25rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .h2{
-                    font-size: $size-mobile*3;
-                    font-family: nth($fonts, 3 );
-                    color: nth($colores, 1 );
-                    @include text-shadow(nth($colores, 4));
-                }    
-            }  
-        }       
-    }*/
+    background-color: #212529;
   }
   .body .main #Servicios-index {
     margin: 0;
@@ -592,6 +538,7 @@
   }
   .body .main .section-carousel {
     margin-top: 5rem;
+    padding-bottom: 5rem;
   }
   .body .main .section-carousel .carousel img {
     height: auto;
@@ -668,6 +615,7 @@
   }
   .body #sobre-nosotros #founder {
     padding: 1rem;
+    padding-bottom: 5rem;
   }
   .body #sobre-nosotros #founder .articulo {
     background-color: #e5e5e5;
@@ -705,6 +653,8 @@
     flex-direction: column;
     align-items: center;
     height: 40rem;
+    border-radius: 0px;
+    box-shadow: 0 0 2rem #e5e5e5;
   }
   .body #Footer .back-home {
     margin-left: 0;
