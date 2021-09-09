@@ -7,12 +7,12 @@
             .contenido {
                 margin: $margin;
                 .articulo {
+                    align-items: center;
                     background-color: nth($colores, 4 );
                     margin-bottom: $margin*2;
                     @extend %border-r;
                     @include shadow(nth($colores, 4));
                     .image, .video{
-                        box-shadow: 0 0 0.5rem nth($colores, 1 );
                         @extend %border-r;
                     }
                     .h2 {

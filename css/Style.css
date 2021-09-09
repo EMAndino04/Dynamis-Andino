@@ -94,6 +94,7 @@
   filter: blur(1rem);
   opacity: 50%;
   transition: 0.2s;
+  object-fit: scale-down;
 }
 .body .section-uno .container .h1:first-child {
   text-shadow: 0 0 2rem black;
@@ -182,7 +183,7 @@
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(1) {
   grid-area: modelado;
-  background-image: url("https://i.ibb.co/wpZhsLs/3.jpg");
+  background-image: url("https://i.ibb.co/9gJJ1vC/b.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -219,12 +220,10 @@
   margin: 10rem;
 }
 .main-servicios #Servicios .contenedor .contenido .articulo {
+  align-items: center;
   background-color: #212529;
   margin-bottom: 20rem;
   box-shadow: 0 0 5rem #212529;
-}
-.main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video {
-  box-shadow: 0 0 0.5rem #e5e5e5;
 }
 .main-servicios #Servicios .contenedor .contenido .articulo .h2 {
   margin: 5rem;
@@ -656,7 +655,7 @@
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 677px) and (max-width: 1024px) {
+@media only screen and (min-width: 677px) and (max-width: 1440px) {
   /*TABLET*/
   .body h2 {
     font-size: 3rem;
@@ -667,25 +666,32 @@
   .body h4 {
     font-size: 0.9rem;
   }
-  .body .hr {
-    display: none;
+  .body .section-uno .container .h1 {
+    transition: none;
+    filter: none;
+    opacity: 100%;
+    font-size: 8rem;
   }
-  .body #Servicios {
+  .body .section-uno .container .h1:nth-child(1) {
+    color: #e5e5e5;
+  }
+  .body #Servicios-index {
     margin: 0;
     padding: 0;
   }
-  .body #Servicios .servicios-articulos {
-    margin: 5rem;
+  .body #Servicios-index .servicios-articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
-  .body #Servicios .servicios-articulos .articulo {
-    margin-bottom: 10rem;
+  .body #Servicios-index .servicios-articulos .articulo {
+    width: 85vw;
+    height: 50rem;
+    margin: 10rem 5rem;
   }
-  .body #Servicios .servicios-articulos .articulo h2, .body #Servicios .servicios-articulos .articulo p {
-    background-color: #e5e5e5;
+  .body #Servicios-index .servicios-articulos .articulo h2 {
     font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 5rem var(--main-color-dos);
   }
   .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
     margin: 10rem 5rem;
@@ -700,43 +706,17 @@
   .body #portfolio #portfolio-galeria-videos .videos iframe {
     width: 100%;
   }
-  .body #sobre-nosotros .titular h1 {
-    font-size: 5rem;
-  }
   .body #Contacto #info-contacto-general .info-contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .body #Contacto #info-contacto-general .info:nth-child(1):hover {
-    transform: scale(1.2);
-  }
-  .body #Contacto #info-contacto-general .info:nth-child(2):hover {
-    transform: scale(1.2);
-  }
-  .body #Contacto #info-contacto-general .info:nth-child(3):hover {
-    transform: scale(1.2);
-  }
-  .body #Contacto #info-contacto-general .info:nth-child(4):hover {
-    transform: scale(1.2);
-  }
-  .body #Contacto #mensaje .send-mensaje {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-  }
-  .body #Contacto #mensaje .send-mensaje .grid-form input {
-    width: 50%;
-  }
-  .body #Contacto #mensaje .send-mensaje .grid-form textarea {
-    width: 100%;
+  .body #Contacto #info-contacto-general .info {
+    transform: none;
   }
   .body #Footer {
     height: 35rem;
     flex-direction: column;
-  }
-  .body #Footer .back-home {
-    margin-left: 0;
   }
 }
 /* ----------------------------------------------

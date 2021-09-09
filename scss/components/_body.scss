@@ -49,6 +49,7 @@
                 filter: blur(1rem);
                 opacity: 50%;
                 transition: 0.2s;
+                object-fit: scale-down;
                 &:first-child{
                     @include text-shadow(nth($colores,6));
                     color: nth($colores, 2 );
