@@ -25,30 +25,10 @@
         height: 20rem; 
 }
 
-%titular-reverse {
-        background: linear-gradient(180deg, nth($colores, 4), nth($colores, 5) , nth($colores, 2), nth($colores, 1));
-}
-
 %border-r {
     border: 0.2rem solid nth($colores, 4 );
     border-radius: 5rem;
 }
 
-%shadow-black{
-    box-shadow: 0 0 5rem nth($colores, 4 );
-}
 
-%shadow-white{
-    box-shadow: 0 0 5rem nth($colores, 1 );
-}
 
-%border-articulo-uno{
-    border-top-right-radius: 5rem;
-    border-bottom-left-radius: 5rem;
-
-}
-
-%border-articulo-dos{
-    border-top-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-}
