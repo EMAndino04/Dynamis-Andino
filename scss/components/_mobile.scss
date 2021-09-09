@@ -41,6 +41,15 @@
         
         .main{
             background-color: nth($colores, 4 );
+            .section-uno{
+                .container{
+                    .h1{
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
             #Servicios-index {
                 margin: 0;
                 padding: 0;
@@ -69,10 +78,29 @@
             } 
             .section-carousel{
                 margin-top: $margin-dos ;
-                padding-bottom: $margin-dos;
                 .carousel{
                     img{
                         height: auto;
+                    }
+                }
+            }
+            .premios{
+                background-color: nth($colores, 4 );
+                .titulo{
+                    margin: $margin-dos 0;
+                    .h2{
+                        color: nth($colores, 1 );
+                        font-size: $size-mobile*3;
+                    }
+                }
+                .contenedor{
+                    margin-bottom: 0;
+                    padding-bottom: $margin;
+                    .distinciones{
+                        &:hover{
+                            transform: none;
+                            box-shadow: none;
+                        }
                     }
                 }
             }
@@ -112,9 +140,6 @@
         }              
         #portfolio {
             #portfolio-galeria-imagenes {
-                .titular{
-                    animation: none;
-                }
                 .portfolio-galeria{
                     .imagenes{
                         margin: 2rem;
