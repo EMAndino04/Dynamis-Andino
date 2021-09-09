@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 #Servicios-index .servicios-articulos {
@@ -244,6 +243,9 @@
 }
 #sobre-nosotros .nosotros .h2 {
   margin: 5rem;
+}
+#sobre-nosotros .nosotros .p {
+  text-align: left;
 }
 #sobre-nosotros .nosotros .h2, #sobre-nosotros .nosotros .p {
   color: #212529;

@@ -7,6 +7,9 @@
         .h2 {
             margin: $margin-dos;
         }
+        .p{
+            text-align: left;
+        }
         
         .h2, .p {
             color: nth($colores, 4 );
