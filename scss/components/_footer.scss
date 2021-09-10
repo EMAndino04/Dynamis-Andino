@@ -2,6 +2,7 @@
 #Footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 20rem;
     background-color: nth($colores, 2 );
     border-top-left-radius: 5rem;
@@ -20,11 +21,8 @@
         align-items: center;
     }
     .back-home {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-left: 10rem;
         margin-bottom: $margin-dos;
+        align-self: flex-end;
     }    
     .nuestras-redes{
         .icons-list{

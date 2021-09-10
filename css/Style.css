@@ -24,8 +24,9 @@
 
 #Servicios-index .titular {
   display: flex;
-  align-items: flex-end;
-  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
 }
 
 #Contacto #mensaje .formulario, #Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo {
@@ -153,7 +154,7 @@
   height: 100vh;
 }
 .main .premios {
-  margin-bottom: 20rem 0;
+  margin-bottom: 0;
 }
 .main .premios .titulo {
   margin: 10rem;
@@ -198,18 +199,16 @@
   background-color: #212529;
 }
 #Servicios-index .titular .titulo {
-  text-shadow: 0 0 2rem #e5e5e5;
   font-family: "Oswald";
-  text-transform: uppercase;
   font-size: 10rem;
-  margin: 0 0 2rem 10rem;
-  color: black;
+  color: #919eaa;
 }
 #Servicios-index .titular p {
   margin-bottom: 5rem;
 }
 #Servicios-index .servicios-articulos {
   margin-bottom: 0;
+  margin-top: 0;
 }
 #Servicios-index .servicios-articulos .articulo {
   box-shadow: 0 0 5rem #e5e5e5;
@@ -462,6 +461,7 @@
 #Footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 20rem;
   background-color: #919eaa;
   border-top-left-radius: 5rem;
@@ -481,11 +481,8 @@
   align-items: center;
 }
 #Footer .back-home {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 10rem;
   margin-bottom: 5rem;
+  align-self: flex-end;
 }
 #Footer .nuestras-redes .icons-list:hover .red {
   filter: blur(0.2rem);
@@ -547,6 +544,9 @@
   .body .section-uno .container .h1:nth-child(1) {
     color: #e5e5e5;
   }
+  .body .section-uno .container:hover .h1 {
+    transform: none;
+  }
   .body #Inicio .navbar {
     position: relative;
   }
@@ -563,11 +563,12 @@
   .body .main #Servicios-index .titular {
     align-items: center;
     justify-content: center;
+    height: 20rem;
   }
   .body .main #Servicios-index .titular .titulo {
     margin: 2rem;
     color: #e5e5e5;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: none;
   }
   .body .main #Servicios-index .servicios-articulos {
@@ -751,6 +752,9 @@
     margin: 0;
     padding: 0;
   }
+  .body .main #Servicios-index .titular .titulo {
+    font-size: 6.8rem;
+  }
   .body .main #Servicios-index .servicios-articulos {
     display: flex;
     flex-direction: column;
@@ -764,6 +768,12 @@
   }
   .body .main #Servicios-index .servicios-articulos .articulo .h2 {
     font-weight: bold;
+  }
+  .body .main .section-carousel .carousel img {
+    height: 80vh;
+  }
+  .body .main .premios .contenedor .distinciones {
+    margin: 5rem;
   }
   .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
     margin: 10rem 5rem;
@@ -787,8 +797,25 @@
     transform: none;
   }
   .body #Footer {
-    height: 35rem;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 677px) and (max-width: 1440px) and (min-width: 677px) and (max-width: 1023px) {
+  .body #Footer {
     flex-direction: column;
+  }
+  .body #Footer .back-home {
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 677px) and (max-width: 1440px) and (min-width: 1024px) and (max-width: 1440px) {
+  .body #Footer .back-home {
+    align-self: flex-end;
+  }
+}
+@media only screen and (min-width: 677px) and (max-width: 1440px) {
+  .body #Footer .firma h4 {
+    font-size: 1.8rem;
   }
 }
 /* ----------------------------------------------

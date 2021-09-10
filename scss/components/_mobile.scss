@@ -30,6 +30,11 @@
                         color: nth($colores, 1 );
                     }
                 }
+                &:hover{
+                    .h1{
+                        transform: none;
+                    }
+                }
             }
         }
 
@@ -56,10 +61,11 @@
                 .titular{
                     align-items: center;
                     justify-content: center;
+                    height: 20rem;
                     .titulo{
                         margin: 2rem;
                         color: nth($colores, 1 );
-                        font-size: $size-mobile*4;
+                        font-size: $size-mobile*3;
                         text-shadow: none;
                     }
                 }
