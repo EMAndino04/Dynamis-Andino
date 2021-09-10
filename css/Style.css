@@ -561,22 +561,27 @@
     padding: 0;
   }
   .body .main #Servicios-index .titular {
+    align-items: center;
     justify-content: center;
   }
   .body .main #Servicios-index .titular .titulo {
     margin: 2rem;
+    color: #e5e5e5;
     font-size: 4rem;
+    text-shadow: none;
   }
   .body .main #Servicios-index .servicios-articulos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 1rem;
   }
   .body .main #Servicios-index .servicios-articulos .articulo {
     width: 100%;
     height: 25rem;
-    margin: 5rem 1rem;
+    margin: 3rem;
+    box-shadow: none;
+    border-radius: 1rem;
   }
   .body .main #Servicios-index .servicios-articulos .articulo .h2 {
     font-size: 3rem;
@@ -671,6 +676,7 @@
     text-align: left;
   }
   .body #sobre-nosotros .articulo .h2 {
+    text-align: center;
     margin: 5rem 0px;
   }
   .body #sobre-nosotros #founder {
@@ -689,6 +695,7 @@
   }
   .body #sobre-nosotros #founder .articulo .h2 {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
   }
   .body #Contacto #info-contacto-general .info-contacto {
