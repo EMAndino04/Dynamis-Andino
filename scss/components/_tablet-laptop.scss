@@ -29,6 +29,11 @@
             #Servicios-index {
                 margin: 0;
                 padding: 0;
+                .titular{
+                    .titulo{
+                        font-size: $h2*1.7;
+                    }
+                }
                 .servicios-articulos{
                     display: flex;
                     flex-direction: column;
@@ -43,7 +48,21 @@
                         }
                     }
                 }
-            }      
+            }
+            .section-carousel{
+                .carousel{
+                    img{
+                        height: 80vh;
+                    }
+                }
+            }
+            .premios{
+                .contenedor{
+                    .distinciones{
+                        margin: $margin-dos;
+                    }
+                }
+            }     
         }  
         #portfolio{
             #portfolio-galeria-imagenes{
@@ -79,8 +98,23 @@
             }    
         }    
         #Footer {
-            height: 35rem;
-            flex-direction: column;      
+            height: 30rem;
+            @media only screen and (min-width:677px) and (max-width:1023px){
+                flex-direction: column;
+                .back-home{
+                    align-self: center;
+                }
+            }
+            .back-home{
+                @media only screen and (min-width:1024px) and (max-width:1440px){
+                    align-self: flex-end;
+                }
+            }
+            .firma{
+                h4{
+                    font-size: $h4;
+                }
+            }
         }        
     }
 } 
