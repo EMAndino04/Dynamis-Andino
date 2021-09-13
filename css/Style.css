@@ -104,7 +104,6 @@
   text-shadow: 0 0 2rem #e5e5e5;
 }
 .body .section-uno .container:hover .h1 {
-  transform: translateY(-3px) scale(1.1);
   filter: none;
   opacity: 100%;
 }
@@ -123,17 +122,17 @@
 #Inicio .navbar {
   box-shadow: 0 0 10rem 2rem;
 }
-#Inicio .navbar .navbar-brand .logo {
+#Inicio .navbar .container-fluid .navbar-brand .logo {
   width: 20rem;
 }
-#Inicio .navbar .navbar-brand:hover {
+#Inicio .navbar .container-fluid .navbar-brand:hover {
   -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-#Inicio .navbar .navbar-nav .nav-item {
+#Inicio .navbar .container-fluid .navbar-nav .nav-item {
   padding: 0 5rem;
 }
-#Inicio .navbar .navbar-nav .nav-item .dropdown-menu {
+#Inicio .navbar .container-fluid .navbar-nav .nav-item .dropdown-menu {
   margin: 0 5rem;
   -webkit-animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -178,7 +177,7 @@
   background-color: #e5e5e5;
   margin: 2rem;
   border-radius: 5rem;
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #212529;
   width: 40rem;
   transition: 0.2s;
 }
@@ -215,7 +214,7 @@
   margin-top: 0;
 }
 #Servicios-index .servicios-articulos .articulo {
-  box-shadow: 0 0 5rem #e5e5e5;
+  box-shadow: 0 0 2rem #e5e5e5;
 }
 #Servicios-index .servicios-articulos .articulo .h2 {
   text-shadow: 0 0 2rem black;
@@ -265,7 +264,7 @@
   align-items: center;
   background-color: #212529;
   margin-bottom: 20rem;
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #212529;
 }
 .main-servicios #Servicios .contenedor .contenido .articulo .h2 {
   margin: 5rem;
@@ -296,7 +295,7 @@
   padding: 0.5rem;
 }
 #sobre-nosotros .nosotros .articulo {
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #212529;
 }
 #sobre-nosotros .gradient {
   background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
@@ -314,7 +313,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 0 5rem #e5e5e5;
+  box-shadow: 0 0 2rem #e5e5e5;
 }
 #sobre-nosotros #founder .articulo h2 {
   color: #212529;
@@ -363,10 +362,10 @@
   transition: all 0.5s ease;
 }
 #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes div:hover {
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
 }
 #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img {
   width: 100%;
@@ -411,7 +410,7 @@
   grid-template-areas: "ubicacion ubicacion horario horario" "ubicacion ubicacion horario horario" "telefono telefono mail mail" "telefono telefono mail mail";
 }
 #Contacto #info-contacto-general .info-contacto .info {
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #212529;
   background-color: #e5e5e5;
   padding: 5rem;
 }
@@ -439,14 +438,19 @@
 #Contacto #mensaje {
   display: flex;
   justify-content: center;
+  background-image: url("https://i.ibb.co/NCfZvm7/7a.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #Contacto #mensaje .formulario {
-  width: 45rem;
+  width: 70rem;
   margin: 5rem;
   background-color: #212529;
   padding: 10px 20px;
   box-sizing: border-box;
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #e5e5e5;
 }
 #Contacto #mensaje .formulario h2 {
   color: #e5e5e5;
@@ -470,7 +474,7 @@
   background-color: #919eaa;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #212529;
 }
 #Footer h3, #Footer h4 {
   color: #212529;
@@ -502,7 +506,7 @@
   padding: 0 1rem;
   background-color: #343a40;
   color: #e5e5e5;
-  box-shadow: 0 0 5rem #212529;
+  box-shadow: 0 0 2rem #212529;
   transition: 0.2s;
 }
 #Footer .nuestras-redes .icons-list .icons .red:hover {
