@@ -12,6 +12,7 @@
         color: nth($colores, 4 );
     }
     h3 {
+        font-family: nth($fonts, 2 );
         font-size: $p;
     } 
     .nuestras-redes, 
