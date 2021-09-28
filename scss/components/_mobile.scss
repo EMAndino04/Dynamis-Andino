@@ -231,7 +231,6 @@
             .premios{
                 background-color: nth($colores, 4 );
                 margin-bottom: 0;
-                object-fit: cover;
                 .titulo{
                     margin: $margin-dos 0;
                     .h2{
@@ -255,8 +254,8 @@
             #info-contacto-general {
                 .info-contacto {
                     display: flex;
-                    justify-content: center;
                     flex-direction: column;
+                    justify-content: center;
                     margin: 1rem;  
                     .info{
                         margin: $size-mobile*3 0;
@@ -280,7 +279,7 @@
             align-items: center;
             height: 40rem;
             border-radius: 0px;
-            @include shadow( nth($colores, 1 ));
+            box-shadow: 0 0 2rem nth($colores, 1 );
             .back-home {
                 margin-left: 0;
             }

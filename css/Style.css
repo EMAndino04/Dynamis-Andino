@@ -746,7 +746,6 @@
   .body #sobre-nosotros .premios {
     background-color: #212529;
     margin-bottom: 0;
-    object-fit: cover;
   }
   .body #sobre-nosotros .premios .titulo {
     margin: 5rem 0;
@@ -765,8 +764,8 @@
   }
   .body #Contacto #info-contacto-general .info-contacto {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     margin: 1rem;
   }
   .body #Contacto #info-contacto-general .info-contacto .info {
