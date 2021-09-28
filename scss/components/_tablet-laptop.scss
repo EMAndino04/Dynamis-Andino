@@ -15,9 +15,6 @@
         .section-uno {
             .container{
                 .h1{
-                    transition: none;
-                    filter: none;
-                    opacity: 100%;
                     font-size: $h2*2;
                     &:nth-child(1){
                         color: nth($colores, 1 );

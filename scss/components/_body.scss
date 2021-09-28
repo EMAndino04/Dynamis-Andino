@@ -43,10 +43,6 @@
                 color: nth($colores, 4 );
                 font-weight: bolder;
                 font-family: nth($fonts, 3 );
-                filter: blur(1rem);
-                opacity: 50%;
-                transition: 0.2s;
-                object-fit: scale-down;
                 &:first-child{
                     @include text-shadow(nth($colores,6));
                     color: nth($colores, 2 );
@@ -55,12 +51,6 @@
                     @include text-shadow(nth($colores, 1));
                 }
             }  
-            &:hover{
-                .h1{
-                    filter: none;
-                    opacity: 100%;
-                }
-            }
         }
     }
 }

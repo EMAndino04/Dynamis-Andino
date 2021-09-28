@@ -22,17 +22,9 @@
             height: 30rem;
             .container{
                 .h1{
-                    transition: none;
-                    filter: none;
-                    opacity: 100%;
                     font-size: $size-mobile*3;
                     &:nth-child(1){
                         color: nth($colores, 1 );
-                    }
-                }
-                &:hover{
-                    .h1{
-                        transform: none;
                     }
                 }
             }
