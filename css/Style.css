@@ -299,7 +299,7 @@
 }
 #sobre-nosotros .gradient {
   background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
-  height: 10rem;
+  height: 20rem;
 }
 #sobre-nosotros #founder {
   background-color: #212529;
@@ -736,7 +736,7 @@
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 677px) and (max-width: 1440px) {
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   /*TABLET*/
   .body h2 {
     font-size: 3rem;
@@ -808,7 +808,7 @@
     height: 30rem;
   }
 }
-@media only screen and (min-width: 677px) and (max-width: 1440px) and (min-width: 677px) and (max-width: 1023px) {
+@media only screen and (min-width: 677px) and (max-width: 1580px) and (min-width: 677px) and (max-width: 1023px) {
   .body #Footer {
     flex-direction: column;
   }
@@ -816,12 +816,12 @@
     align-self: center;
   }
 }
-@media only screen and (min-width: 677px) and (max-width: 1440px) and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 677px) and (max-width: 1580px) and (min-width: 1024px) and (max-width: 1580px) {
   .body #Footer .back-home {
     align-self: flex-end;
   }
 }
-@media only screen and (min-width: 677px) and (max-width: 1440px) {
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   .body #Footer .firma h4 {
     font-size: 1.8rem;
   }
