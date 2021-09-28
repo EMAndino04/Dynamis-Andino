@@ -2,12 +2,8 @@
     .section-uno{
         background-image: url("https://i.ibb.co/GdmL3jz/Preview-4-Reis-20180518.png");
     }
-    .mobile {
-        display: none;
-    }   
     .section-carousel{
-        display: flex;
-        align-items: center;
+        @extend %d-flex-dos;
         .carousel{
             background-color: nth($colores, 1 );
             margin-bottom: $margin-dos;
@@ -27,33 +23,25 @@
             }
         }
         .contenedor{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            @extend %d-flex-tres;
             margin-bottom: $margin;
             .distinciones{
-                background-color: nth($colores, 1 );
-                margin: 2rem;
-                border-radius: 5rem;
+                @extend %distinciones;
+                @extend %border-r;
                 @include shadow(nth($colores, 4));
-                width: 40rem;
-                transition: 0.2s;
                 &:hover{
-                    transform: translateY(-3px) scale(1.1);
-                    box-shadow: 0 0 2rem 0 nth($colores, 7 );
+                    @include prefijos(translateY(-3px) scale(1.1)) ;
+                    @include shadow (nth($colores, 7 )) ;
                 }
                 .image{
                     width: 25rem;
                 }
                 .texto{
                     .h2{
-                        font-family: nth($fonts, 3 );
-                        margin-bottom: 2rem;
+                        @extend %distinciones-h2;
                     }
                     .p{
-                        margin: 2rem;
-                        text-align: left;
-                        color: nth($colores, 5 );
+                        @extend %distinciones-p;
                     }
                 }
             }

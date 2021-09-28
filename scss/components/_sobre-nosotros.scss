@@ -37,9 +37,8 @@
             background-color: nth($colores, 4 );
             padding: $margin-dos;
             margin: $margin-dos;
-            display: flex;
+            @extend %d-flex;
             flex-direction: column;
-            justify-content: center;
             @extend %border-r;
             @include shadow(nth($colores, 4));
             h2 {
@@ -58,7 +57,8 @@
     }
     .premios{
         background-image: url("https://i.ibb.co/drGBnxQ/2-sin-marcas.png");
-        @extend %background-fixed;
+        @extend %background;
+        background-attachment: fixed;
         padding: 10rem 0;
         margin-top: 0;
         margin-bottom:$margin-dos;
@@ -72,19 +72,14 @@
             }
         }
         .contenedor{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            @extend %d-flex-tres;
             margin-bottom: $margin;
             .distinciones{
-                background-color: nth($colores, 1 );
-                margin: 2rem;
-                border-radius: 5rem;
+                @extend %distinciones;
+                @extend %border-r;
                 @include shadow(nth($colores, 4));
-                width: 40rem;
-                transition: 0.2s;
                 &:hover{
-                    box-shadow: 0 0 2rem 0 nth($colores, 1 );
+                    @include shadow (nth($colores, 1 )) ;
                     @include prefijos(translateY(-3px));
                 }
                 .image{
@@ -92,15 +87,10 @@
                 }
                 .texto{
                     .h2{
-                        font-size: $h3;
-                        font-family: nth($fonts, 3 );
-                        margin-bottom: 2rem;
+                        @extend %distinciones-h2;
                     }
                     .p{
-                        font-size: $p;
-                        margin: 2rem;
-                        text-align: left;
-                        color: nth($colores, 5 );
+                        @extend %distinciones-p;
                     }
                 }
             }

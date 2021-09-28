@@ -18,8 +18,7 @@
     }
     #portfolio-galeria-imagenes{
         .portfolio-galeria {
-            display: flex;
-            justify-content: center;
+            @extend %d-flex;
             flex-direction: column;
             margin-bottom: $margin;
             .imagenes {
@@ -54,8 +53,7 @@
     }
     #portfolio-galeria-videos{
         .videos {
-            display: flex;
-            justify-content: center;
+            @extend %d-flex;
             iframe{
                 margin: 2rem;
             }

@@ -29,16 +29,52 @@
   height: 40rem;
 }
 
-#Contacto #mensaje .formulario, #Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo {
+#Contacto #mensaje .formulario .submit, #Contacto #mensaje .formulario, #Contacto #info-contacto-general .info-contacto .info, #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image img, #sobre-nosotros .premios .contenedor .distinciones, #sobre-nosotros #founder .articulo, #sobre-nosotros .nosotros .articulo, .main-servicios #Servicios .contenedor .contenido .articulo .image, .main-servicios #Servicios .contenedor .contenido .articulo .video, .main-servicios #Servicios .contenedor .contenido .articulo, #Servicios-index .servicios-articulos .articulo, .main .premios .contenedor .distinciones {
   border: 0.2rem solid #212529;
   border-radius: 5rem;
 }
 
-#sobre-nosotros .premios, .body .section-uno {
-  background-attachment: fixed;
+#Contacto #mensaje, #sobre-nosotros .premios, #Servicios-index .servicios-articulos .articulo:nth-child(4), #Servicios-index .servicios-articulos .articulo:nth-child(3), #Servicios-index .servicios-articulos .articulo:nth-child(2), #Servicios-index .servicios-articulos .articulo:nth-child(1), .body .section-uno {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+#Footer .nuestras-redes,
+#Footer .firma, #Contacto #mensaje, #portfolio #portfolio-galeria-videos .videos, #portfolio #portfolio-galeria-imagenes .portfolio-galeria, #sobre-nosotros #founder .articulo, .body .section-uno {
+  display: flex;
+  justify-content: center;
+}
+
+#Footer, .main .section-carousel {
+  display: flex;
+  align-items: center;
+}
+
+#sobre-nosotros .premios .contenedor, .main .premios .contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#sobre-nosotros .premios .contenedor .distinciones, .main .premios .contenedor .distinciones {
+  background-color: #e5e5e5;
+  margin: 2rem;
+  width: 40rem;
+  transition: 0.2s;
+}
+
+#sobre-nosotros .premios .contenedor .distinciones .texto .h2, .main .premios .contenedor .distinciones .texto .h2 {
+  font-size: 3.5rem;
+  font-family: "Oswald";
+  margin-bottom: 2rem;
+}
+
+#sobre-nosotros .premios .contenedor .distinciones .texto .p, .main .premios .contenedor .distinciones .texto .p {
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: left;
+  color: #343a40;
 }
 
 * {
@@ -83,9 +119,8 @@
   color: #e5e5e5;
 }
 .body .section-uno {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-attachment: fixed;
   height: 100rem;
 }
 .body .section-uno .container .h1 {
@@ -138,13 +173,6 @@
 .main .section-uno {
   background-image: url("https://i.ibb.co/GdmL3jz/Preview-4-Reis-20180518.png");
 }
-.main .mobile {
-  display: none;
-}
-.main .section-carousel {
-  display: flex;
-  align-items: center;
-}
 .main .section-carousel .carousel {
   background-color: #e5e5e5;
   margin-bottom: 5rem;
@@ -164,36 +192,21 @@
   text-shadow: 0 0 2rem #212529;
 }
 .main .premios .contenedor {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   margin-bottom: 10rem;
 }
 .main .premios .contenedor .distinciones {
-  background-color: #e5e5e5;
-  margin: 2rem;
-  border-radius: 5rem;
   box-shadow: 0 0 2rem #212529;
-  width: 40rem;
-  transition: 0.2s;
 }
 .main .premios .contenedor .distinciones:hover {
+  -webkit-transform: translateY(-3px) scale(1.1);
+  -o-transform: translateY(-3px) scale(1.1);
+  -moz-transform: translateY(-3px) scale(1.1);
   transform: translateY(-3px) scale(1.1);
-  box-shadow: 0 0 2rem 0 #0077b6;
+  box-shadow: 0 0 2rem #0077b6;
 }
 .main .premios .contenedor .distinciones .image {
   width: 25rem;
 }
-.main .premios .contenedor .distinciones .texto .h2 {
-  font-family: "Oswald";
-  margin-bottom: 2rem;
-}
-.main .premios .contenedor .distinciones .texto .p {
-  margin: 2rem;
-  text-align: left;
-  color: #343a40;
-}
-
 #Servicios-index {
   background-color: #212529;
 }
@@ -222,29 +235,18 @@
 #Servicios-index .servicios-articulos .articulo:nth-child(1) {
   grid-area: modelado;
   background-image: url("https://i.ibb.co/9gJJ1vC/b.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(2) {
   grid-area: renderizado;
   background-image: url("https://i.ibb.co/6mcZWpT/Final-Casa-Caro-Fer-2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(3) {
   grid-area: produccion;
   background-image: url("https://i.ibb.co/WP9cCDT/youtube-3216705-1920.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(4) {
   grid-area: realidad;
   background-image: url("https://i.ibb.co/8KcpHcD/virtual-reality-4490469-1920.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 #Servicios-index .servicios-articulos .articulo:nth-child(4) h2 {
   text-shadow: 0 0 2rem #e5e5e5;
@@ -310,9 +312,7 @@
   background-color: #212529;
   padding: 5rem;
   margin: 5rem;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   box-shadow: 0 0 2rem #212529;
 }
 #sobre-nosotros #founder .articulo h2 {
@@ -329,6 +329,7 @@
 }
 #sobre-nosotros .premios {
   background-image: url("https://i.ibb.co/drGBnxQ/2-sin-marcas.png");
+  background-attachment: fixed;
   padding: 10rem 0;
   margin-top: 0;
   margin-bottom: 5rem;
@@ -343,21 +344,13 @@
   text-shadow: 0 0 2rem #212529;
 }
 #sobre-nosotros .premios .contenedor {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   margin-bottom: 10rem;
 }
 #sobre-nosotros .premios .contenedor .distinciones {
-  background-color: #e5e5e5;
-  margin: 2rem;
-  border-radius: 5rem;
   box-shadow: 0 0 2rem #212529;
-  width: 40rem;
-  transition: 0.2s;
 }
 #sobre-nosotros .premios .contenedor .distinciones:hover {
-  box-shadow: 0 0 2rem 0 #e5e5e5;
+  box-shadow: 0 0 2rem #e5e5e5;
   -webkit-transform: translateY(-3px);
   -o-transform: translateY(-3px);
   -moz-transform: translateY(-3px);
@@ -366,18 +359,6 @@
 #sobre-nosotros .premios .contenedor .distinciones .image {
   width: 25rem;
 }
-#sobre-nosotros .premios .contenedor .distinciones .texto .h2 {
-  font-size: 3.5rem;
-  font-family: "Oswald";
-  margin-bottom: 2rem;
-}
-#sobre-nosotros .premios .contenedor .distinciones .texto .p {
-  font-size: 2.5rem;
-  margin: 2rem;
-  text-align: left;
-  color: #343a40;
-}
-
 /* Portfolio */
 #portfolio .section-uno {
   background-image: url("https://i.ibb.co/DV732SZ/5.png");
@@ -395,8 +376,6 @@
   margin: 0 10rem 2rem 0;
 }
 #portfolio #portfolio-galeria-imagenes .portfolio-galeria {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   margin-bottom: 10rem;
 }
@@ -427,10 +406,6 @@
 }
 #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image:nth-child(7) {
   grid-row: span 2;
-}
-#portfolio #portfolio-galeria-videos .videos {
-  display: flex;
-  justify-content: center;
 }
 #portfolio #portfolio-galeria-videos .videos iframe {
   margin: 2rem;
@@ -486,13 +461,8 @@
   margin: 10rem 0;
 }
 #Contacto #mensaje {
-  display: flex;
-  justify-content: center;
   background-image: url("https://i.ibb.co/NCfZvm7/7a.png");
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin-bottom: 10rem;
 }
 #Contacto #mensaje .formulario {
@@ -516,16 +486,12 @@
   border: none;
 }
 #Contacto #mensaje .formulario .submit {
-  border-radius: 5rem;
   font-family: "Source Sans Pro";
   font-size: 3.5rem;
 }
 
-/* Footer */
 #Footer {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   height: 20rem;
   background-color: #919eaa;
   border-top-left-radius: 5rem;
@@ -541,8 +507,6 @@
 }
 #Footer .nuestras-redes,
 #Footer .firma {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 #Footer .back-home {
@@ -567,6 +531,9 @@
   transition: 0.2s;
 }
 #Footer .nuestras-redes .icons-list .icons .red:hover {
+  -webkit-transform: translateY(-3px) scale(1.1);
+  -o-transform: translateY(-3px) scale(1.1);
+  -moz-transform: translateY(-3px) scale(1.1);
   transform: translateY(-3px) scale(1.1);
   box-shadow: 0 0.5rem 0.5rem 0 #212529;
   filter: none;
@@ -581,7 +548,6 @@
   background: #007785;
 }
 
-/* Fin footer */
 @media only screen and (max-width: 676px) {
   /*MOBILE*/
   .body h2 {
@@ -638,8 +604,8 @@
   }
   .body .main #Servicios-index .servicios-articulos {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin: 0 1rem;
   }
   .body .main #Servicios-index .servicios-articulos .articulo {
@@ -688,7 +654,7 @@
     margin: 3rem 0px;
   }
   .body #Servicios .contenedor .contenido .articulo {
-    border-radius: 0px;
+    border-radius: 0;
     padding: 0;
     margin: 0.5rem;
     margin-bottom: 5rem;
@@ -714,8 +680,8 @@
   .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
     margin: 2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     border-radius: 0;
   }
   .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes .grid-image {
@@ -727,8 +693,8 @@
   }
   .body #portfolio #portfolio-galeria-videos .videos {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 5rem;
   }
   .body #portfolio #portfolio-galeria-videos .videos iframe {
@@ -798,8 +764,8 @@
   }
   .body #Contacto #info-contacto-general .info-contacto {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin: 1rem;
   }
   .body #Contacto #info-contacto-general .info-contacto .info {

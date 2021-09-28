@@ -31,11 +31,46 @@
     border-radius: 5rem;
 }
 
-%background-fixed {
-    background-attachment: fixed;
+%background{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+%d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+%d-flex-dos{
+    display: flex;
+    align-items: center;
+}
+
+%d-flex-tres{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+%distinciones{
+    background-color: nth($colores, 1 );
+    margin: 2rem;
+    width: 40rem;
+    transition: 0.2s;
+}
+
+%distinciones-h2{
+    font-size: $h3;
+    font-family: nth($fonts, 3 );
+    margin-bottom: 2rem;
+}
+
+%distinciones-p{
+    font-size: $p;
+    margin: 2rem;
+    text-align: left;
+    color: nth($colores, 5 );
 }
 
 

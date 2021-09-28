@@ -71,8 +71,8 @@
                 }
                 .servicios-articulos{
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
+                    flex-direction: column;
                     margin: 0 1rem;
                     .articulo{
                         width: 100%;
@@ -126,7 +126,7 @@
                 .contenido {
                     margin: $size-mobile*3 0px;               
                     .articulo{
-                        border-radius: 0px;
+                        border-radius: 0;
                         padding: 0;
                         margin: 0.5rem;
                         margin-bottom: $margin-dos;
@@ -158,8 +158,8 @@
                     .imagenes{
                         margin: 2rem;
                         display: flex;
+                        align-items: center;
                         flex-direction: column;
-                        align-items: center; 
                         border-radius: 0;
                         .grid-image{
                             transform: none;
@@ -174,8 +174,8 @@
             #portfolio-galeria-videos{
                     .videos  {
                         display: flex;
-                        flex-direction: column;
                         align-items: center;
+                        flex-direction: column;
                         margin-bottom: $margin-dos;
                         iframe{
                             margin: 1rem;
@@ -254,8 +254,8 @@
             #info-contacto-general {
                 .info-contacto {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
+                    flex-direction: column;
                     margin: 1rem;  
                     .info{
                         margin: $size-mobile*3 0;
@@ -279,7 +279,7 @@
             align-items: center;
             height: 40rem;
             border-radius: 0px;
-            box-shadow: 0 0 2rem nth($colores, 1 );
+            @include shadow( nth($colores, 1 ));
             .back-home {
                 margin-left: 0;
             }

@@ -31,10 +31,10 @@
         color: nth($colores, 1);
     }
     .section-uno{
-        display: flex;
+        @extend %d-flex;
         flex-direction: column;
-        justify-content: center;
-        @extend %background-fixed;
+        @extend %background;
+        background-attachment: fixed;
         height: 100rem;
         .container{
             .h1{
