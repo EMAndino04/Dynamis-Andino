@@ -231,6 +231,7 @@
             .premios{
                 background-color: nth($colores, 4 );
                 margin-bottom: 0;
+                object-fit: cover;
                 .titulo{
                     margin: $margin-dos 0;
                     .h2{

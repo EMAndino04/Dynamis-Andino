@@ -746,6 +746,7 @@
   .body #sobre-nosotros .premios {
     background-color: #212529;
     margin-bottom: 0;
+    object-fit: cover;
   }
   .body #sobre-nosotros .premios .titulo {
     margin: 5rem 0;
