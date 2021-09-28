@@ -84,7 +84,16 @@
                     }
                 }          
             }       
-        }       
+        }  
+        #sobre-nosotros{
+            .premios{
+                    .contenedor{
+                        .distinciones{
+                            margin: $margin-dos;
+                        }
+                    }
+            }        
+        }
         #Contacto{
             #info-contacto-general{
                 .info-contacto {

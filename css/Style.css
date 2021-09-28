@@ -598,7 +598,7 @@
   }
   .body .section-uno {
     padding: 0;
-    height: 20rem;
+    height: 30rem;
   }
   .body .section-uno .container .h1 {
     transition: none;
@@ -673,6 +673,9 @@
     margin-bottom: 0;
     padding-bottom: 10rem;
   }
+  .body .main .premios .contenedor .distinciones .image {
+    width: 15rem;
+  }
   .body .main .premios .contenedor .distinciones:hover {
     transform: none;
     box-shadow: none;
@@ -734,16 +737,21 @@
     height: 30rem;
   }
   .body #sobre-nosotros .articulo {
+    background-color: #212529;
     border: none;
     border-radius: none;
     box-shadow: none;
-    margin: 0px;
+    margin: 0;
     padding: 0;
     text-align: left;
   }
   .body #sobre-nosotros .articulo .h2 {
+    color: #e5e5e5;
     text-align: center;
     margin: 5rem 0px;
+  }
+  .body #sobre-nosotros .articulo .p {
+    color: #e5e5e5;
   }
   .body #sobre-nosotros #founder {
     padding: 1rem;
@@ -751,18 +759,42 @@
   }
   .body #sobre-nosotros #founder .articulo {
     background-color: #e5e5e5;
-    border-radius: 1rem;
+    border: none;
+    border-radius: 0;
     box-shadow: none;
     padding: 1rem;
     margin: 0px;
   }
   .body #sobre-nosotros #founder .articulo .h2, .body #sobre-nosotros #founder .articulo .h3 {
+    color: #212529;
     text-align: center;
   }
   .body #sobre-nosotros #founder .articulo .h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 3rem;
+  }
+  .body #sobre-nosotros #founder .articulo .p {
+    color: #212529;
+  }
+  .body #sobre-nosotros .premios {
+    background-color: #212529;
+    margin-bottom: 0;
+  }
+  .body #sobre-nosotros .premios .titulo {
+    margin: 5rem 0;
+  }
+  .body #sobre-nosotros .premios .titulo .h2 {
+    color: #e5e5e5;
+    font-size: 3rem;
+  }
+  .body #sobre-nosotros .premios .contenedor {
+    margin-bottom: 0;
+    padding-bottom: 10rem;
+  }
+  .body #sobre-nosotros .premios .contenedor .distinciones:hover {
+    transform: none;
+    box-shadow: none;
   }
   .body #Contacto #info-contacto-general .info-contacto {
     display: flex;
@@ -852,6 +884,9 @@
   }
   .body #portfolio #portfolio-galeria-videos .videos iframe {
     width: 100%;
+  }
+  .body #sobre-nosotros .premios .contenedor .distinciones {
+    margin: 5rem;
   }
   .body #Contacto #info-contacto-general .info-contacto {
     display: flex;
