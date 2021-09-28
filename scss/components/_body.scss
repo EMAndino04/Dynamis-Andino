@@ -34,10 +34,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        @extend %background-fixed;
         height: 100rem;
         .container{
             .h1{

@@ -34,6 +34,13 @@
   border-radius: 5rem;
 }
 
+#sobre-nosotros .premios, .body .section-uno {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,10 +86,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100rem;
 }
 .body .section-uno .container .h1 {
@@ -284,6 +287,10 @@
 #sobre-nosotros .section-uno {
   background-image: url("https://i.ibb.co/JzszCQh/R3-0.png");
 }
+#sobre-nosotros .nosotros {
+  padding: 10rem 0;
+  background-color: #212529;
+}
 #sobre-nosotros .nosotros .h2 {
   margin: 5rem;
 }
@@ -295,37 +302,87 @@
   padding: 0.5rem;
 }
 #sobre-nosotros .nosotros .articulo {
-  box-shadow: 0 0 2rem #212529;
+  box-shadow: 0 0 2rem #e5e5e5;
 }
 #sobre-nosotros .gradient {
-  background: linear-gradient(360deg, #212529, #343a40, #919eaa, #e5e5e5);
+  background: linear-gradient(180deg, #212529, #343a40, #919eaa, #e5e5e5);
   height: 20rem;
 }
 #sobre-nosotros #founder {
-  background-color: #212529;
+  background-color: #e5e5e5;
   background-size: contain;
   padding: 5rem;
 }
 #sobre-nosotros #founder .articulo {
-  background-color: #e5e5e5;
+  background-color: #212529;
   padding: 5rem;
   margin: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 0 2rem #e5e5e5;
+  box-shadow: 0 0 2rem #212529;
 }
 #sobre-nosotros #founder .articulo h2 {
-  color: #212529;
+  color: #e5e5e5;
   margin: 5rem, 5rem, 2.5rem;
 }
 #sobre-nosotros #founder .articulo h3 {
   margin-bottom: 5rem;
-  color: #212529;
+  color: #e5e5e5;
 }
 #sobre-nosotros #founder .articulo p {
-  color: #212529;
+  color: #e5e5e5;
   text-align: left;
+}
+#sobre-nosotros .premios {
+  background-image: url("https://i.ibb.co/drGBnxQ/2-sin-marcas.png");
+  padding: 10rem 0;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+#sobre-nosotros .premios .titulo {
+  margin: 10rem;
+}
+#sobre-nosotros .premios .titulo .h2 {
+  font-family: "Oswald";
+  font-size: 8rem;
+  color: #e5e5e5;
+  text-shadow: 0 0 2rem #212529;
+}
+#sobre-nosotros .premios .contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+#sobre-nosotros .premios .contenedor .distinciones {
+  background-color: #e5e5e5;
+  margin: 2rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 2rem #212529;
+  width: 40rem;
+  transition: 0.2s;
+}
+#sobre-nosotros .premios .contenedor .distinciones:hover {
+  box-shadow: 0 0 2rem 0 #e5e5e5;
+  -webkit-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+#sobre-nosotros .premios .contenedor .distinciones .image {
+  width: 25rem;
+}
+#sobre-nosotros .premios .contenedor .distinciones .texto .h2 {
+  font-size: 3.5rem;
+  font-family: "Oswald";
+  margin-bottom: 2rem;
+}
+#sobre-nosotros .premios .contenedor .distinciones .texto .p {
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: left;
+  color: #343a40;
 }
 
 /* Portfolio */

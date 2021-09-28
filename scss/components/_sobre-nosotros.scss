@@ -4,6 +4,8 @@
         background-image: url("https://i.ibb.co/JzszCQh/R3-0.png");
     }
     .nosotros {
+        padding: 10rem 0;
+        background-color: nth($colores, 4 );
         .h2 {
             margin: $margin-dos;
         }
@@ -18,39 +20,89 @@
         .articulo {
             @extend %articulo;
             @extend %border-r;
-            @include shadow(nth($colores, 4));
+            @include shadow(nth($colores, 1));
         }
     }
     .gradient{
-        background: map-get($inter-section, gradiente-white-black );
+        background: map-get($inter-section, gradiente-black-white );
         height: 20rem;
     }
     /* founder */
     #founder{
-        background-color: nth($colores, 4 );
+        background-color: nth($colores, 1 );
         background-size: contain;
         padding: 5rem;
         
         .articulo {
-            background-color: nth($colores, 1 );
+            background-color: nth($colores, 4 );
             padding: $margin-dos;
             margin: $margin-dos;
             display: flex;
             flex-direction: column;
             justify-content: center;
             @extend %border-r;
-            @include shadow(nth($colores, 1));
+            @include shadow(nth($colores, 4));
             h2 {
-                color: nth($colores, 4 );
+                color: nth($colores, 1 );
                 margin: $margin-dos, $margin-dos, 2.5rem;
             }   
             h3 {
                 margin-bottom: $margin-dos;
-                color: nth($colores, 4 );
+                color: nth($colores, 1 );
             }    
             p{
-                color: nth($colores, 4 );
+                color: nth($colores, 1 );
                 text-align: left;
+            }
+        }
+    }
+    .premios{
+        background-image: url("https://i.ibb.co/drGBnxQ/2-sin-marcas.png");
+        @extend %background-fixed;
+        padding: 10rem 0;
+        margin-top: 0;
+        margin-bottom:$margin-dos;
+        .titulo{
+            margin: $margin;
+            .h2{
+                font-family: nth($fonts, 3 );
+                font-size: $h2*2;
+                color: nth($colores, 1 );
+                @include text-shadow(nth($colores, 4));
+            }
+        }
+        .contenedor{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: $margin;
+            .distinciones{
+                background-color: nth($colores, 1 );
+                margin: 2rem;
+                border-radius: 5rem;
+                @include shadow(nth($colores, 4));
+                width: 40rem;
+                transition: 0.2s;
+                &:hover{
+                    box-shadow: 0 0 2rem 0 nth($colores, 1 );
+                    @include prefijos(translateY(-3px));
+                }
+                .image{
+                    width: 25rem;
+                }
+                .texto{
+                    .h2{
+                        font-size: $h3;
+                        font-family: nth($fonts, 3 );
+                        margin-bottom: 2rem;
+                    }
+                    .p{
+                        font-size: $p;
+                        margin: 2rem;
+                        text-align: left;
+                        color: nth($colores, 5 );
+                    }
+                }
             }
         }
     }
