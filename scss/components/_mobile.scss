@@ -41,6 +41,14 @@
         #Inicio {
             .navbar{
                 position: relative;
+                .container-fluid{
+                    .navbar-nav{
+                        align-items: flex-start;
+                        .nav-item{
+                            padding: 0;
+                        }
+                    }
+                }
             }
         }
         

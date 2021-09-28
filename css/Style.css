@@ -133,7 +133,8 @@
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 #Inicio .navbar .container-fluid .navbar-nav .nav-item {
-  padding: 0 5rem;
+  padding: 0;
+  padding-right: 10rem;
 }
 #Inicio .navbar .container-fluid .navbar-nav .nav-item .dropdown-menu {
   margin: 0 5rem;
@@ -615,6 +616,12 @@
   .body #Inicio .navbar {
     position: relative;
   }
+  .body #Inicio .navbar .container-fluid .navbar-nav {
+    align-items: flex-start;
+  }
+  .body #Inicio .navbar .container-fluid .navbar-nav .nav-item {
+    padding: 0;
+  }
   .body .main {
     background-color: #212529;
   }
@@ -845,6 +852,17 @@
   .body .section-uno .container .h1:nth-child(1) {
     color: #e5e5e5;
   }
+}
+@media only screen and (min-width: 677px) and (max-width: 1580px) and (min-width: 677px) and (max-width: 1023px) {
+  .body #Inicio .navbar .container-fluid .navbar-nav {
+    align-items: flex-start;
+  }
+  .body #Inicio .navbar .container-fluid .navbar-nav .nav-item {
+    padding: 0;
+    padding-right: 5rem;
+  }
+}
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   .body .main #Servicios-index {
     margin: 0;
     padding: 0;
@@ -872,6 +890,8 @@
   .body .main .premios .contenedor .distinciones {
     margin: 5rem;
   }
+}
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   .body #portfolio #portfolio-galeria-imagenes .portfolio-galeria .imagenes {
     margin: 10rem 5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -885,9 +905,13 @@
   .body #portfolio #portfolio-galeria-videos .videos iframe {
     width: 100%;
   }
+}
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   .body #sobre-nosotros .premios .contenedor .distinciones {
     margin: 5rem;
   }
+}
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   .body #Contacto #info-contacto-general .info-contacto {
     display: flex;
     flex-direction: column;
@@ -896,6 +920,8 @@
   .body #Contacto #info-contacto-general .info {
     transform: none;
   }
+}
+@media only screen and (min-width: 677px) and (max-width: 1580px) {
   .body #Footer {
     height: 30rem;
   }

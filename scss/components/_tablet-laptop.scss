@@ -24,7 +24,22 @@
                     }
                 }
             }
-        }      
+        } 
+        #Inicio {
+            @media only screen and (min-width:677px) and (max-width:1023px){
+                .navbar{
+                    .container-fluid{
+                        .navbar-nav{
+                            align-items: flex-start;
+                            .nav-item{
+                                padding: 0;
+                                padding-right: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }     
         .main{
             #Servicios-index {
                 margin: 0;
