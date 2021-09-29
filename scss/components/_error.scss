@@ -1,0 +1,53 @@
+#body{
+    background-image: url("https://i.ibb.co/NCfZvm7/7a.png");
+    @extend %background;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .error{
+        backdrop-filter: blur(1rem);
+        box-shadow: 0 0 2rem nth($colores, 1 );
+        width: 80vw;
+        text-align: center;
+        .image{
+            padding: 0;
+            margin: 0;
+            img{
+                width: 50rem;
+                height: 20rem;
+                object-fit: cover;
+            }
+        }
+        .h1, .p{
+            color: nth($colores, 1 );
+            font-family: nth($fonts, 3 );
+            padding: 2rem;
+            @include text-shadow(nth($colores, 6));
+        }
+        .h1{
+            font-size: $h1;
+        }
+        .p{
+            font-size: $p*2;
+        }
+        .home{
+            display: inline-block;
+            margin: $margin-dos;
+            a{
+                padding: 2rem;
+                background-color: nth($colores, 1 );
+                border-radius: 5rem;
+                font-size: $a;
+                color: nth($colores, 4 );
+                text-decoration: none;
+                font-family: nth($fonts , 3 );
+                &:hover{
+                    background-color: nth($colores, 7 );
+                    @include shadow(nth($colores, 1));
+                }
+            }
+        }
+    }
+}
