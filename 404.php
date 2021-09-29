@@ -22,7 +22,7 @@
     <title>Error 404</title>
 </head>
 <body id="body">
-    <section class="error">
+    <section class="error" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="image" >
             <img src="https://i.ibb.co/Sy0wP66/67748194-717966101994719-6178594953929687040-n-removebg-preview.png" alt="">
         </div>
