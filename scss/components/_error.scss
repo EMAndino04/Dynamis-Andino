@@ -11,13 +11,22 @@
         box-shadow: 0 0 2rem nth($colores, 1 );
         width: 80vw;
         text-align: center;
+        @media only screen and (max-width: 676px){
+            width: 100vw;
+        }
         .image{
             padding: 0;
             margin: 0;
+            /*@media only screen and (max-width: 676px){
+                display: none;
+            }*/
             img{
                 width: 50rem;
                 height: 20rem;
                 object-fit: cover;
+                @media only screen and (max-width: 676px){
+                    width: 25rem;
+                }
             }
         }
         .h1, .p{
@@ -35,7 +44,7 @@
         .home{
             display: inline-block;
             margin: $margin-dos;
-            a{
+            .a{
                 padding: 2rem;
                 background-color: nth($colores, 1 );
                 border-radius: 5rem;
@@ -43,6 +52,9 @@
                 color: nth($colores, 4 );
                 text-decoration: none;
                 font-family: nth($fonts , 3 );
+                @media only screen and (max-width: 676px){
+                    font-size: $size-mobile;
+                }
                 &:hover{
                     background-color: nth($colores, 7 );
                     @include shadow(nth($colores, 1));
